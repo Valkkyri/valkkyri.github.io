@@ -2,7 +2,7 @@ body {
     font-size: 1em;
 }
 header, nav, footer {
-    margin: 1.25rem auto;
+    margin: 1em auto;
     max-width: 900px;
 }
 header {
