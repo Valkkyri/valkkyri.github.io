@@ -1,3 +1,13 @@
+body {
+    font-size: 1em;
+}
+header, nav, footer {
+    margin: 1.25rem auto;
+    max-width: 900px;
+}
+header {
+    color: navy;
+}
 /*make all images 400px wide*/
 img {
     width: 400px;
