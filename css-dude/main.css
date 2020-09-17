@@ -1,12 +1,15 @@
 body {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 header, nav, main, footer {
     margin: 1em auto;
     max-width: 900px;
 }
 header {
-    color: navy;
+    background-color: seagreen;
+    color: seashell;
+    text-align: center;
+    padding: .5em 0;
 }
 /*make all images 400px wide*/
 img {
