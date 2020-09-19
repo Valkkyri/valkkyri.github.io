@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <title>First Test</title>
-    </head>
-    <body>
-        <h1>Test</h1>
-        <p>Got it working!</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Gamble | WDD 230 - Fall 2020</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images\melissa-selfie-01.jpg" class="profile-img" />
+        <h1>Melissa Gamble</h1>
+    </header>
+    <main>
+        <h2>WDD 230: Assignment Portal</h2>
+        <div class="hr-line"></div>
+        <ul>
+            <li>Lesson 02: <a href="#">Assignment Link</a></li>
+            <li>Lesson 03: <a href="#">Assignment Link</a></li>
+            <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Melissa Gamble | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p class="spesh-spesh">Last Updated: <span id="lastUpdated"></span></p>
+    </footer>    
+</body>
+<script onload="currentDate()" src="js/currentDate.js"></script>
 </html>

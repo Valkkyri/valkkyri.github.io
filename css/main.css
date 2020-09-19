@@ -1,18 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans:wght@300;400;700&display=swap');
+
 body {
     font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #FE4A49;
+}
+a {
+    color: #FE4A49;
+    text-decoration: none;
+}
+a:hover {
+    color: #FED766;
 }
 header, nav, main, footer {
     margin: 1em auto;
     max-width: 900px;
 }
-header {
-    background-color: seagreen;
+header h1 {
+    color: #FED766;
+}
+header, footer {
+    background-color: #141B41;
     color: seashell;
     text-align: center;
     padding: .5em 0;
+    border-radius: 6px;
 }
-/*make all images 400px wide*/
-img {
-    width: 400px;
-    height: auto;
+footer {
+    padding: .05em 0;
+    font-size: 1rem;
+}
+footer a {
+    color: #FED766;
+}
+footer a:hover {
+    color: #FE4A49;
+}
+main {
+    margin: 1em auto;
+    max-width: 850px;
+}
+.profile-img {
+    width: 200px;
+    float: right;
+    margin: 1em;
+    box-shadow: -10px 10px 30px 0 rgba(20, 27, 60, .6);
+}
+.hr-line {
+    border-top: 1px solid #d5d4dd;
+    margin-top: -18px;
+}
+.spesh-spesh {
+    font-style: italic;
 }
