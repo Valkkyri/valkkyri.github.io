@@ -28,11 +28,14 @@ header, footer {
     color: seashell;
     text-align: center;
     padding: .5em 0;
-    border-radius: 6px;
+}
+header {
+    border-radius: 6px 6px 3px 3px;
 }
 footer {
     padding: .05em 0;
     font-size: 1rem;
+    border-radius: 3px 3px 6px 6px;
 }
 footer a {
     color: #FED766;
