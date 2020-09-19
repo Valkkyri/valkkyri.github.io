@@ -1,4 +1,4 @@
-let latestMod = new Date(document.lastModified);
+let latestMod = document.lastModified;
 let today = new Date();
 
 document.getElementById('latestModified').innerText = latestMod;
