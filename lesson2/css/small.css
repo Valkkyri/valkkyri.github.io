@@ -80,3 +80,6 @@ footer p:last-of-type {
 footer a {
     color: #131614;
 }
+footer a:hover {
+    color: #1C170D;
+}
