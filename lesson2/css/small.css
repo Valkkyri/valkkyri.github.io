@@ -21,7 +21,6 @@ a:hover {
     color: #3A413D;
 }
 header {
-    grid-template-rows: repeat(2, 1fr);
     background-color: #9B7E46;
     padding: 1em;
 }
@@ -56,6 +55,9 @@ p.pizazz {
     font-size: 2.2em;
     margin: .3em 0 0 2.2em;
     color: #3A413D;
+}
+section:last-of-type p.pizazz {
+    margin: .3em 0 0 1.3em;
 }
 img.sample-site {
     max-width: 100%;
