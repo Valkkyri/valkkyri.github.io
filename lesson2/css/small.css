@@ -1,0 +1,76 @@
+/* MAIN/SMALL CSS */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-family: 'Rubik', Verdana, sans-serif;
+    background-color: #F3F8F1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Secular One', sans-serif;
+    line-height: 1.2em;
+    margin: .5em 0 0 0;
+    color: #3A413D;
+}
+a {
+    color: #792316;
+    text-decoration: none;
+}
+a:hover {
+    color: #3A413D;
+}
+header {
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #9B7E46;
+    padding: 1em;
+}
+header h1, p {
+    color: #F3F8F1;
+    text-align: center;
+}
+header h1 {
+    margin: .5em 0 0 0;
+}
+header p {
+    margin: .2em 0 0 0;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: .12em;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+}
+section {
+    background-color: #A5CAB7;
+    padding: .5em 1em;
+}
+section p {
+    margin: 1em .5em;
+    color: #131614;
+    text-align: left;
+}
+p.pizazz {
+    font-size: 2.2em;
+    margin: .3em 0 0 2.2em;
+    color: #3A413D;
+}
+#whitespace p.pizazz {
+    text-align: right;
+    margin: .3em 0 0 0;
+}
+img.sample-site {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto .7em auto;
+    box-shadow: 0 2px 10px 0 #3A413D;
+}
+footer {
+    background-color: #9B7E46;
+    padding: 1em;
+}
+footer p {
+    text-align: center;
+}
