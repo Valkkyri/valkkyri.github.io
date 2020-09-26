@@ -74,6 +74,9 @@ footer {
 footer p {
     text-align: center;
 }
+footer p:last-of-type {
+    margin-bottom: .5em;
+}
 footer a {
     color: #131614;
 }
