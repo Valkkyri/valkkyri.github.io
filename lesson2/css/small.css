@@ -57,10 +57,6 @@ p.pizazz {
     margin: .3em 0 0 2.2em;
     color: #3A413D;
 }
-#whitespace p.pizazz {
-    text-align: right;
-    margin: .3em 0 0 0;
-}
 img.sample-site {
     max-width: 100%;
     height: auto;
