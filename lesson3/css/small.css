@@ -1,11 +1,12 @@
 /* MAIN/SMALL CSS */
+/* Color Palette: https://coolors.co/f3f8f1-a5cab7-792316-3a413d-9b7e46-f4b266 */
 body {
     max-width: 100%;
     margin: 0 auto;
     font-size: 1.2em;
     line-height: 1.3em;
     font-family: 'Rubik', Verdana, sans-serif;
-    background-color: #F3F8F1;
+    background-color: #EEF7FB;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Secular One', sans-serif;
@@ -14,41 +15,52 @@ h1, h2, h3, h4, h5, h6 {
     color: #3A413D;
 }
 a {
-    color: #792316;
+    color: #F49F0A;
     text-decoration: none;
 }
 a:hover {
-    color: #3A413D;
+    color: #F08700;
 }
 header {
-    background-color: #9B7E46;
-    padding: 1em;
+    background-color: #003D3D;
+    padding: 1em 0 0;
 }
 header h1, h3 {
-    color: #F3F8F1;
+    color: #003D3D;
     text-align: center;
 }
 header h1 {
     margin: .5em 0 0 0;
 }
+nav {
+    background-color: #00A6A6;
+}
 nav ul {
+    max-width: 1100px;
     list-style-type: none;
-    margin: 1em auto;
+    margin: 1em auto 0;
     padding: 0;
     text-align: center;
 }
-
+nav ul li {
+    padding: 1em;
+}
+nav ul li:hover {
+    background-color: #BBDEF0;
+}
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1.5em;
+    
 }
-section {
-    background-color: #A5CAB7;
-    padding: .5em 1em;
+section.home_hero {
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+    background: linear-gradient(rgba(238, 247, 251, .2), rgba(238, 247, 251, .8)), url(../images/clouds_rodion-kutsaev-PEm_sLmJT-w-unsplash.jpg) bottom / 100% no-repeat;
+    padding: 6em 0;
+    margin: 0;
 }
+
+
 footer {
-    background-color: #9B7E46;
+    background-color: #003D3D;
     padding: 1em;
 }
 footer p {
