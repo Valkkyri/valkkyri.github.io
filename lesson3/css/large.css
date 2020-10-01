@@ -1,0 +1,6 @@
+/* DESKTOP CSS */
+@media (min-width: 62.5em) {
+    body {
+        width: 1100px;
+    }
+}
