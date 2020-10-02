@@ -9,7 +9,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rosario', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.2em;
     margin: .5em 0 0 0;
     color: #3A413D;
@@ -25,7 +25,7 @@ header {
     padding: 1em 0 0;
 }
 header h1, h3 {
-    color: #003D3D;
+    color: #0A090B;
     text-align: center;
 }
 header h1 {
@@ -72,14 +72,13 @@ nav ul li:hover {
 }
 section.home_hero {
     /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
-    background: linear-gradient(rgba(238, 247, 251, .2), rgba(238, 247, 251, .8)), url(../images/clouds_rodion-kutsaev-PEm_sLmJT-w-unsplash.jpg) bottom / 100% no-repeat;
-    padding: 6em 0;
+    background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / 100% fixed no-repeat;
+    padding: 4em 0 6em 0;
     margin: 0;
+    border-bottom: 18px solid #F08700;
 }
-
-
 footer {
-    background-color: #003D3D;
+    background-color: #002929;
     padding: 1em;
     color: #EEF7FB;
 }
