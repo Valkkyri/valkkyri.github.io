@@ -81,6 +81,7 @@ section.home_hero {
 footer {
     background-color: #003D3D;
     padding: 1em;
+    color: #EEF7FB;
 }
 footer p {
     text-align: center;
@@ -89,8 +90,8 @@ footer p:last-of-type {
     margin-bottom: .5em;
 }
 footer a {
-    color: #131614;
+    color: #EEF7FB;
 }
 footer a:hover {
-    color: #1C170D;
+    color: #F08700;
 }
