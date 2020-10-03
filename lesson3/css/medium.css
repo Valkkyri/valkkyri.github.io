@@ -1,7 +1,39 @@
 /* TABLET CSS */
 @media only screen and (min-width: 37.5em) {
+    /* TOP SECTION */
     nav ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    section#global-header-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section.header-logo {
+        margin: 1em 3em 1.5em 0;
+        padding: 0 1em;
+        width: 30%;
+    }
+    section.header-logo img {
+        width: 100%;
+    }
+    section.locations {
+        margin: 1em 1em 1em 8em;
+        width: 70%;
+    }
+    section.locations ul {
+        float: right;
+    }
+    section.home_hero {
+        background-size: auto 100%;
+    }
+
+    /* MAIN CONTENT */
+    main.two-col {
+        flex-direction: row;
+    }
+    main.two-col section {
+        max-width: 50%;
+        
     }
 }

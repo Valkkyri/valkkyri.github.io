@@ -1,28 +1,35 @@
 /* MAIN/SMALL CSS */
-/* Color Palette: https://coolors.co/f3f8f1-a5cab7-792316-3a413d-9b7e46-f4b266 */
+
+/* GLOBAL */
 body {
     max-width: 100%;
     margin: 0 auto;
     font-size: 1.2em;
     line-height: 1.3em;
     font-family: 'Montserrat', sans-serif;
+    color: #2b2f32;
+    background-color: #002929;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rosario', sans-serif;
     font-weight: 700;
     line-height: 1.2em;
     margin: .5em 0 0 0;
-    color: #3A413D;
+    color: #006666;
 }
 a {
-    color: #EEF7FB;
+    color: #006666;
     text-decoration: none;
 }
 a:hover {
     color: #F08700;
 }
+
+/* TOP SECTION */
 header {
-    padding: 1em 0 0;
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
 }
 header h1, h3 {
     color: #0A090B;
@@ -31,17 +38,26 @@ header h1, h3 {
 header h1 {
     margin: .5em 0 0 0;
 }
-#global-header-top {
+section#global-header-top {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 1100px;
-    margin: 0 auto;
+    padding: 0;
+}
+section.header-logo {
+    margin: 1em auto 1.5em auto;
+}
+section.header-logo img {
+    max-width: 100%;
+}
+section.locations {
+    display: inline;
 }
 section.locations ul {
      list-style: none;
      margin: 0;
+     padding: 0;
 }
 section.locations ul li {
     background: #003D3D;
@@ -54,30 +70,74 @@ section.locations ul li {
 }
 nav {
     background-color: #002929;
+    margin-top: 1em;
+    color: #EEF7FB;
 }
 nav ul {
-    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     list-style-type: none;
-    margin: 1em auto 0;
+    margin: 0;
     padding: 0;
     text-align: center;
 }
-nav ul li {
+nav ul li a {
+    display: block;
     padding: 1em;
     color: #EEF7FB;
 }
-nav ul li:hover {
-    background-color: #BBDEF0;
-    color: #F08700;
+nav ul li a:hover {
+    color: #002929;
+    background-color: #F49F0A;
 }
 section.home_hero {
     /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
-    background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / 100% fixed no-repeat;
+    background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / auto 100% fixed no-repeat;
     padding: 4em 0 6em 0;
     margin: 0;
-    border-bottom: 18px solid #F08700;
+    border-bottom: 17px solid #F08700;
 }
+section.sub_hero {
+    background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center / 100% scroll no-repeat;
+    padding: 2em 0 3em 0;
+    margin: 0;
+    border-bottom: 17px solid #F08700;
+}
+
+/* MAIN CONTENT */
+#main-wrap {
+    width: 100%;
+    background-color: #ffffff;
+}
+main {
+    max-width: 100%;
+    padding: 2em 1em;    
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    margin: 1.5em 0 .5em 0; 
+}
+main h2:first-child {
+    margin-top: 0;
+}
+main.two-col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;   
+}
+main.two-col section {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+main.two-col section img.persona {
+    width: 100%;
+}
+
+/* FOOTER */
 footer {
+    max-width: 100%;
     background-color: #002929;
     padding: 1em;
     color: #EEF7FB;

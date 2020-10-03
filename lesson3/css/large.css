@@ -1,7 +1,31 @@
 /* DESKTOP CSS */
 @media (min-width: 62.5em) {
+    section#global-header-top {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    section.header-logo {
+        margin: 1em 3em 1.5em 0;
+        padding: 0 1em;
+        width: 30%;
+    }
+    section.locations {
+        margin: 1em 1em 1em 8em;
+        width: 70%;
+    }
+    #main-wrap {
+        
+    }   
     main {
-        width: 1100px;
-        margin: 1em auto;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    nav ul {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    section.home_hero {
+        background-size: 100%;
+        background-position: top;
     }
 }
