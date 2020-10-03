@@ -91,6 +91,10 @@ nav ul li a:hover {
     color: #002929;
     background-color: #F49F0A;
 }
+a.active {
+    color: #002929;
+    background-color: #F49F0A;
+}
 section.home_hero {
     /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
     background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / auto 100% fixed no-repeat;
