@@ -8,7 +8,6 @@ body {
     line-height: 1.3em;
     font-family: 'Montserrat', sans-serif;
     color: #2b2f32;
-    background-color: #002929;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rosario', sans-serif;
@@ -43,23 +42,17 @@ section#global-header-top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding-top: 1em;
 }
-section.header-logo {
+.header-logo img {
     margin: 1em auto 1.5em auto;
 }
-section.header-logo img {
-    max-width: 100%;
-}
-section.locations {
-    display: inline;
-}
-section.locations ul {
+ul.locations {
      list-style: none;
      margin: 0;
      padding: 0;
 }
-section.locations ul li {
+ul.locations li {
     background: #003D3D;
     padding: .5em 2em;
     margin: .5em 0;
@@ -110,10 +103,6 @@ section.sub_hero {
 }
 
 /* MAIN CONTENT */
-#main-wrap {
-    width: 100%;
-    background-color: #ffffff;
-}
 main {
     max-width: 100%;
     padding: 2em 1em;    

@@ -4,15 +4,6 @@
         max-width: 1100px;
         margin: 0 auto;
     }
-    section.header-logo {
-        margin: 1em 3em 1.5em 0;
-        padding: 0 1em;
-        width: 30%;
-    }
-    section.locations {
-        margin: 1em 1em 1em 8em;
-        width: 70%;
-    } 
     main {
         max-width: 1100px;
         margin: 0 auto;
