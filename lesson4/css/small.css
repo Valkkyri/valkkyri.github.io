@@ -1,0 +1,168 @@
+/* MAIN/SMALL CSS */
+
+/* GLOBAL */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #2b2f32;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rosario', sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: .5em 0 0 0;
+    color: #006666;
+}
+a {
+    color: #006666;
+    text-decoration: none;
+}
+a:hover {
+    color: #F08700;
+}
+
+/* TOP SECTION */
+header {
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
+}
+header h1, header h3 {
+    color: #0A090B;
+    text-align: center;
+}
+header h1 {
+    margin: .5em 0 0 0;
+}
+section#global-header-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+}
+.header-logo img {
+    margin: 1em auto 1.5em auto;
+}
+ul.locations {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ul.locations li {
+    background: #003D3D;
+    padding: .5em 2em;
+    margin: .5em 0;
+    color: #EEF7FB;
+    border-radius: 4px;
+    box-shadow: 1px 2px 6px 0 rgba(62, 63, 63, .6);
+    text-align: center;
+}
+nav {
+    background-color: #002929;
+    margin-top: 1em;
+    color: #EEF7FB;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navigation li:first-child {
+    display: block;
+    width: 100%;
+}
+.navigation li {
+    display: none;
+}
+.navigation li a {
+    display: block;
+    padding: 1em;
+    color: #EEF7FB;
+}
+.navigation li a:hover {
+    color: #002929;
+    background-color: #F49F0A;
+}
+.navigation a.active {
+    color: #002929;
+    background-color: #F49F0A;
+}
+.mobile-view li {
+    display: block;
+}
+section.home_hero {
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+    background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / auto 100% fixed no-repeat;
+    padding: 4em 0 6em 0;
+    margin: 0;
+    border-bottom: 17px solid #F08700;
+}
+section.sub_hero {
+    background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center / 100% scroll no-repeat;
+    padding: 2em 0 3em 0;
+    margin: 0;
+    border-bottom: 17px solid #F08700;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 100%;
+    padding: 2em 1em;    
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    margin: 1.5em 0 .5em 0; 
+}
+main h2:first-child {
+    margin-top: 0;
+}
+main.two-col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;   
+}
+main.two-col section {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+main.two-col section img.persona {
+    width: 100%;
+}
+.content-placeholder {
+    background-color: #EEF7FB;
+    padding: 1em;
+    border: 1px dashed rgba(187, 222, 240, .7);
+    margin: 1em;
+}
+article.content-placeholder img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    max-width: 100%;
+    background-color: #002929;
+    padding: 1em;
+    color: #EEF7FB;
+}
+footer p {
+    text-align: center;
+}
+footer p:last-of-type {
+    margin-bottom: .5em;
+}
+footer a {
+    color: #EEF7FB;
+}
+footer a:hover {
+    color: #F08700;
+}
