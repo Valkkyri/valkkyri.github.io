@@ -1,0 +1,27 @@
+/* DESKTOP CSS */
+@media (min-width: 62.5em) {
+    section#global-header-top {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    nav ul {
+        max-width: 1100px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: flex;
+    }
+    section.home_hero {
+        background-size: 100%;
+        background-position: top;
+    }
+}

@@ -1,0 +1,40 @@
+/* TABLET CSS */
+@media only screen and (min-width: 37.5em) {
+    /* TOP SECTION */
+    /*
+    section#global-header-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    */
+    img.header-logo {
+        /*margin: 1em 3em 1.5em 0;*/
+        margin: 1em 0;
+        padding: 0 1em;
+        max-width: 75%;
+    }
+    article.content-placeholder img {
+        width: 300px;
+        float: right;
+        padding: 0 0 1em 1em;
+    }
+    /*
+    ul.locations {
+        margin: 1em 1em 1em 8em;
+        max-width: 75%;
+        white-space: nowrap;
+    }
+    */
+    section.home_hero {
+        background-size: auto 100%;
+    }
+
+    /* MAIN CONTENT */
+    main.two-col {
+        flex-direction: row;
+    }
+    main.two-col section {
+        width: 50%;
+        
+    }
+}
