@@ -1,32 +1,53 @@
 /* TABLET CSS */
 @media only screen and (min-width: 37.5em) {
     /* TOP SECTION */
-    /*
     section#global-header-top {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        padding-top: 0;
+        align-items: center;
     }
-    */
     img.header-logo {
-        /*margin: 1em 3em 1.5em 0;*/
         margin: 1em 0;
         padding: 0 1em;
-        max-width: 75%;
+        width: 5em;
+    }
+    h1.tagline-top {
+        display: none;
+    }
+    h1.tagline-bottom {
+        display: none;
+    }
+    h1.tagline {
+        display: block;
+        font-size: 1.4em;
     }
     article.content-placeholder img {
         width: 300px;
         float: right;
         padding: 0 0 1em 1em;
     }
-    /*
-    ul.locations {
-        margin: 1em 1em 1em 8em;
-        max-width: 75%;
-        white-space: nowrap;
-    }
-    */
     section.home_hero {
         background-size: auto 100%;
+    }
+    nav {
+        margin-top: 0;
+    }
+    nav ul {
+        font-size: .8em;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: flex;
+        white-space: nowrap;
+    }
+    .navigation li a {
+        padding: .75em .5em;
     }
 
     /* MAIN CONTENT */
