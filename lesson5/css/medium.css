@@ -7,6 +7,9 @@
         padding-top: 0;
         align-items: center;
     }
+    section#global-header-top p {
+        text-align: left;
+    }
     img.header-logo {
         margin: 1em 0;
         padding: 0 1em;
@@ -22,14 +25,10 @@
         display: block;
         font-size: 1.4em;
     }
-    article.content-placeholder img {
-        width: 300px;
-        float: right;
-        padding: 0 0 1em 1em;
-    }
     section.home_hero {
         background-size: auto 100%;
     }
+    /* ==== MAIN MENU ==== */
     nav {
         margin-top: 0;
     }
@@ -37,7 +36,8 @@
         font-size: .8em;
         margin: 0 auto;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-content: stretch;
     }
     .navigation li:first-child {
         display: none;
@@ -47,15 +47,79 @@
         white-space: nowrap;
     }
     .navigation li a {
-        padding: .75em .5em;
+        padding: .75em 1.25em;
     }
+    /* ==== MAIN MENU END ==== */
 
     /* MAIN CONTENT */
     main.two-col {
         flex-direction: row;
     }
     main.two-col section {
-        width: 50%;
-        
+        width: 50%;        
     }
+
+    /* ==== WEATHER SUMMARY ==== */
+    .weather-summary-hero {
+        position: relative;
+        margin: 1em;
+    }
+    .weather-summary-hero img {
+        width: 100%;
+    }
+    .weather-summary {
+        position: absolute;
+        top: 1.5em;
+        left: 1.5em;
+        width: 16em;
+        background: linear-gradient(rgba(244, 240, 226, 1), rgba(244, 240, 226, .85));
+        padding: 1.25em .75em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5em;
+        box-shadow: 0 0 1.8em #2b2f32;
+        border: 5px solid rgba(62,54,24,.95);
+        font-size: .85em;
+    }
+    .weather-summary h2 {
+        grid-column: span 2;
+        justify-self: center;
+        margin: 0;
+        border-bottom: 1px solid #006666;
+    }
+    .weather-summary section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+    }
+    .weather-summary stats-left.section {
+        grid-column: 1;
+    }
+    section.stats-left ul li {
+        text-align: right;
+        color: #F08700;
+    }
+    section.stats-right {
+        grid-column: 2;
+    }
+    /* ==== WEATHER SUMMARY END ==== */
+
+    /* ==== FIVE DAY FORCAST ==== */
+    .forcast ul {
+        flex-direction: row;
+    }
+    /* ==== FIVE DAY FORCAST END ==== */
+
+    /* ==== TOWN NEWS ==== */
+    .town-news {
+        margin: 1em;
+        border-radius: 10px 10px 10px 10px;
+    }
+    article.town-news img {
+        width: 300px;
+        float: right;
+        margin: 1em;
+    }
+    /* ==== TOWN NEWS END ==== */
 }

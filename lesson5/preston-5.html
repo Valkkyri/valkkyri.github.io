@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melissa Gamble | WDD 230 - Fall 2020 | Instructor: Emily Long</title>
-    <meta name="description" content="Assignment portal for WDD 230 Web Development Course, fall 2020.">
+    <title>Lower South East Idaho Weather | Know tomorrow's weather today</title>
+    <meta name="description" content="Get weather information for Lower South East Idaho, including: Preston, Soda Spring, and Fish Haven.">
+    <script src="https://kit.fontawesome.com/01cddefc03.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rosario:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
@@ -13,11 +14,17 @@
 </head>
 <body>
     <header>        
+        <section id="friday-only">
+            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        </section>
         <section id="global-header-top">
             <a href="index.html"><img class="header-logo" src="images/weather-logo-02.png" alt="Lower South East Idaho Weather" /></a>            
-            <h1 class="tagline-top">Lower South East Idaho</h1>
-            <h1 class="tagline-bottom">Weather</h1>
-            <h1 class="tagline">Lower South East Idaho Weather</h1>
+            <section>
+                <h1 class="tagline-top">Lower South East Idaho</h1>
+                <h1 class="tagline-bottom">Weather</h1>
+                <h1 class="tagline">Lower South East Idaho Weather</h1>
+                <p>Know tomorrow's weather today</p>
+            </section>
         </section>
         <nav>
             <ul class="navigation">
@@ -62,31 +69,63 @@
         <section class="forcast">
             <h2>Five Day Forcast</h2>
             <ul>
-                <li><strong>Mon</strong></li>
-                <li><strong>Tue</strong></li>
-                <li><strong>Wed</strong></li>
-                <li><strong>Thu</strong></li>
-                <li><strong>Fri</strong></li>
+                <li>
+                    <strong>mon</strong>
+                    <img src="images/sunny.png" alt="sunny">
+                    72&deg;F
+                </li>
+                <li>
+                    <strong>tue</strong>
+                    <img src="images/sunny.png" alt="sunny">
+                    68&deg;F
+                </li>
+                <li>
+                    <strong>wed</strong>
+                    <img src="images/snowy.png" alt="snowy">
+                    49&deg;F
+                </li>
+                <li>
+                    <strong>thu</strong>
+                    <img src="images/stormy.png" alt="sunny">
+                    53&deg;F
+                </li>
+                <li>
+                    <strong>fri</strong>
+                    <img src="images/stormy.png" alt="sunny">
+                    58&deg;F
+                </li>
             </ul>
         </section>
-        <article class="content-placeholder">
-            <img src="images/placeholder.jpg" alt="placeholder" />
-            <h3>Artitcle Title</h3>
+        <article class="town-news">
+            <img src="images/fly-fishing_austin-neill-3quTd6dyudg-unsplash.jpg" alt="placeholder" />
+            <h3>Fly Fishing Becomes Increasingly Dangerous</h3>
+            <p><em>"What the fly fishermen don't know is that they're the real bait. It's bear season!!"</em></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam unde dolores, esse pariatur veniam maxime illo possimus commodi rem in quia provident similique assumenda, asperiores consectetur voluptatem adipisci accusantium?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolor at eum repudiandae necessitatibus. Quas voluptas, eveniet tempora id ipsam a, libero ducimus error qui voluptatem, laboriosam officiis blanditiis labore.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam unde dolores, esse pariatur veniam maxime illo possimus commodi rem in quia provident similique assumenda, asperiores consectetur voluptatem adipisci accusantium?</p>
         </article>
-        <section class="content-placeholder">
-            <h2>Contact Information</h2>
+        <section class="contact">
+            <img src="images/map.jpg" alt="Lower South East Idaho">
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <h4>Address</h4>
+                <p>1234 Middle St<br>
+                Somewhere Idaho 83400</p>
+                <h4>Phone</h4>
+                <p>208-208-2080</p>
+                <ul class="social-icons">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </section>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Lower South East Idaho Weather | Melissa Gamble<br>
-            <em>Last Updated: <span id="latestModified"></span></em> | <span id="todaysDate"></span></p>
-        <p><a href="../index.html">Assignment Portal</a></p>
+        <p>&copy; <span id="currentYear"></span> Lower South East Idaho Weather | Melissa Gamble</p>
+        <p><span id="todaysDate"></span></p>
     </footer>
-    <script src="js/last-modified.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/current-date.js"></script>
+    <script src="js/pancakes.js"></script>
 </body>
 </html>

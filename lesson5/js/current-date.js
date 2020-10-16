@@ -1,5 +1,8 @@
 window.onload = currentDate();
 
+let currentYear = new Date();
+document.getElementById('currentYear').textContent = currentYear.getFullYear();
+
 function currentDate() {
     let dayNames = [
         'Sunday',

@@ -38,6 +38,20 @@ header h2 {
     margin: .5em 0 0 0;
     font-size: 2em;
 }
+
+/* ==== FRIDAY ONLY BANNER ==== */
+section#friday-only {
+    background-color: #FAD189;
+    text-align: center;
+    padding: 1em;
+}
+section#friday-only p {
+    margin: 0;
+    color: #002929;
+    font-weight: 500;
+}
+/* ==== FRIDAY ONLY BANNER END ==== */
+
 section#global-header-top {
     width: 100%;
     display: flex;
@@ -52,15 +66,25 @@ img.header-logo {
 h1.tagline-top {
     margin: 0;
     font-size: 1.2em;
+    text-align: center;
 }
 h1.tagline-bottom {
     margin: 0;
     letter-spacing: .1em;
     text-transform: uppercase;
+    text-align: center;
 }
 h1.tagline {
     display: none;
 }
+section#global-header-top p {
+    font-weight: 500;
+    font-style: italic;
+    color: #006666;
+    text-align: center;
+    margin-bottom: 0;
+}
+/* ==== MAIN MENU ==== */
 nav {
     background-color: #002929;
     margin-top: 1em;
@@ -80,7 +104,7 @@ nav ul {
     width: 100%;
 }
 .navigation li {
-    display: none;
+    display: none;    
 }
 .navigation li a {
     display: block;
@@ -92,12 +116,13 @@ nav ul {
     background-color: #F49F0A;
 }
 .navigation a.active {
-    color: #002929;
-    background-color: #F49F0A;
+    background-color: #00A3A3;
 }
 .mobile-view li {
     display: block;
 }
+/* ==== MAIN MENU END ==== */
+
 section.home_hero {
     /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
     background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / auto 100% fixed no-repeat;
@@ -115,7 +140,6 @@ section.sub_hero {
 /* MAIN CONTENT */
 main {
     max-width: 100%;
-    padding: 2em 1em;    
 }
 main h1, main h2, main h3, main h4, main h5, main h6 {
     margin: 1.5em 0 .5em 0; 
@@ -126,7 +150,7 @@ main h2:first-child {
 main.two-col {
     display: flex;
     flex-flow: column nowrap;
-    align-content: space-evenly;   
+    align-content: space-evenly;
 }
 main.two-col section {
     padding: 1em;
@@ -137,23 +161,19 @@ main.two-col section {
 
 /* ==== WEATHER SUMMARY ==== */
 .weather-summary-hero {
-    position: relative;
-    margin: 1em;
+    margin: 0;
 }
 .weather-summary-hero img {
     width: 100%;
 }
 .weather-summary {
-    position: absolute;
-    top: 1.5em;
-    left: 1.5em;
-    width: 16em;
+    max-width: 100%;
+    margin: 1em;
     background: linear-gradient(rgba(244, 240, 226, 1), rgba(244, 240, 226, .85));
     padding: 1.25em .75em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: .5em;
-    box-shadow: 0 0 1.8em #2b2f32;
     border: 5px solid rgba(62,54,24,.95);
     font-size: .85em;
 }
@@ -183,40 +203,83 @@ section.stats-right {
 
 /* ==== FIVE DAY FORCAST ==== */
 section.forcast {
-    padding: 1em;
-    border: 1px dashed rgba(187, 222, 240, .7);
-    margin: 1em;
+    margin: 2em;
+}
+.forcast h2 {
+    text-align: center;
 }
 .forcast ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    background-color: #EEF7FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
 }
 .forcast ul li {
-    
+    border: 1px solid #002929;
+    text-align: center;
+    padding-bottom: .4em;
 }
 .forcast ul li strong {
     display: block;
     background-color: #006666;
-    padding: .5em 1em;
-    white-space: ;
+    padding: .3em 2em;
+    white-space: nowrap;
+    color: #ffffff;
+    font-weight: 500;
+}
+.forcast ul li img {
+    display: block;
+    margin: .4em auto;
+    width: 50px;
 }
 /* ==== FIVE DAY FORCAST END ==== */
 
-
-.content-placeholder {
+/* ==== TOWN NEWS ==== */
+.town-news {
     background-color: #EEF7FB;
     padding: 1em;
-    border: 1px dashed rgba(187, 222, 240, .7);
-    margin: 1em;
 }
-article.content-placeholder img {
+article.town-news img {
+    width: 100%;
+    margin: 1em auto;
+}
+/* ==== TOWN NEWS END ==== */
+
+/* ==== CONTACT INFORMATION ==== */
+.contact {
+    margin: 2em 1em 0 1em;
+}
+.contact img {
     width: 100%;
 }
+.contact-info {
+    margin: 1em 0;
+    text-align: center;
+}
+.contact-info h4 {
+    margin: 0;
+}
+.contact-info p {
+    margin-top: .25em;
+}
+ul.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+.social-icons li {
+    padding-right: .2em;
+}
+.social-icons li a {
+    color: #F08700;
+}
+/* ==== CONTACT INFORMATION END ==== */
 
 /* FOOTER */
 footer {
