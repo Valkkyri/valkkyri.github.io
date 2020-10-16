@@ -44,6 +44,7 @@ section#friday-only {
     background-color: #FAD189;
     text-align: center;
     padding: 1em;
+    display: none;
 }
 section#friday-only p {
     margin: 0;
