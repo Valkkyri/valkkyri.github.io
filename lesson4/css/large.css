@@ -4,6 +4,12 @@
         max-width: 1100px;
         margin: 0 auto;
     }
+    img.header-logo {
+        width: 7em;
+    }
+    h1.tagline {
+        font-size: 1.7em;
+    }
     main {
         max-width: 1100px;
         margin: 0 auto;

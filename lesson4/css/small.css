@@ -30,12 +30,13 @@ header {
     padding: 0;
     background-color: #ffffff;
 }
-header h1, header h3 {
+header h2, header h3 {
     color: #0A090B;
     text-align: center;
 }
-header h1 {
+header h2 {
     margin: .5em 0 0 0;
+    font-size: 2em;
 }
 section#global-header-top {
     width: 100%;
@@ -44,22 +45,30 @@ section#global-header-top {
     align-items: center;
     padding-top: 1em;
 }
-.header-logo img {
-    margin: 1em auto 1.5em auto;
+img.header-logo {
+    width: 10rem;
+    margin: 0 auto .5em auto;
 }
-ul.locations {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-}
-ul.locations li {
-    background: #003D3D;
-    padding: .5em 2em;
-    margin: .5em 0;
-    color: #EEF7FB;
-    border-radius: 4px;
-    box-shadow: 1px 2px 6px 0 rgba(62, 63, 63, .6);
+h1.tagline-top {
+    margin: 0;
+    font-size: 1.2em;
     text-align: center;
+}
+h1.tagline-bottom {
+    margin: 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1.tagline {
+    display: none;
+}
+section#global-header-top p {
+    font-weight: 500;
+    font-style: italic;
+    color: #006666;
+    text-align: center;
+    margin-bottom: 0;
 }
 nav {
     background-color: #002929;

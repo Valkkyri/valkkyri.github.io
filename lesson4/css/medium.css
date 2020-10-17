@@ -1,17 +1,32 @@
 /* TABLET CSS */
 @media only screen and (min-width: 37.5em) {
     /* TOP SECTION */
-    /*
     section#global-header-top {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        padding-top: 0;
+        align-items: center;
     }
-    */
+    section#global-header-top p {
+        text-align: left;
+    }
     img.header-logo {
-        /*margin: 1em 3em 1.5em 0;*/
         margin: 1em 0;
         padding: 0 1em;
-        max-width: 75%;
+        width: 5em;
+    }
+    h1.tagline-top {
+        display: none;
+    }
+    h1.tagline-bottom {
+        display: none;
+    }
+    h1.tagline {
+        display: block;
+        font-size: 1.4em;
+    }
+    section.home_hero {
+        background-size: auto 100%;
     }
     article.content-placeholder img {
         width: 300px;
