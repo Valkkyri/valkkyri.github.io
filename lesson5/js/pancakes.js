@@ -5,9 +5,9 @@ function pancakes() {
     let day = today.getDay();
 
     if (day == 5) {
-        document.getElementById('friday-only').style.display = 'block';
+        document.querySelector('#friday-only').style.display = 'block';
     }
     else {
-        document.getElementById('friday-only').style.display = 'none';
+        document.querySelector('#friday-only').style.display = 'none';
     }
 }
