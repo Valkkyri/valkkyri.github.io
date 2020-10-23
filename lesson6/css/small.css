@@ -1,0 +1,303 @@
+/* MAIN/SMALL CSS */
+
+/* GLOBAL */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #2b2f32;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rosario', sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: .5em 0 0 0;
+    color: #006666;
+}
+a {
+    color: #006666;
+    text-decoration: none;
+}
+a:hover {
+    color: #F08700;
+}
+
+/* TOP SECTION */
+header {
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
+}
+header h2, header h3 {
+    color: #0A090B;
+    text-align: center;
+}
+header h2 {
+    margin: .5em 0 0 0;
+    font-size: 2em;
+}
+
+/* ==== FRIDAY ONLY BANNER ==== */
+section#friday-only {
+    background-color: #FAD189;
+    text-align: center;
+    padding: 1em;
+    display: none;
+}
+section#friday-only p {
+    margin: 0;
+    color: #002929;
+    font-weight: 500;
+}
+/* ==== FRIDAY ONLY BANNER END ==== */
+
+section#global-header-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+}
+img.header-logo {
+    width: 10rem;
+    margin: 0 auto .5em auto;
+}
+h1.tagline-top {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+h1.tagline-bottom {
+    margin: 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1.tagline {
+    display: none;
+}
+section#global-header-top p {
+    font-weight: 500;
+    font-style: italic;
+    color: #006666;
+    text-align: center;
+    margin-bottom: 0;
+}
+/* ==== MAIN MENU ==== */
+nav {
+    background-color: #002929;
+    margin-top: 1em;
+    color: #EEF7FB;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navigation li:first-child {
+    display: block;
+    width: 100%;
+}
+.navigation li {
+    display: none;    
+}
+.navigation li a {
+    display: block;
+    padding: .75em;
+    color: #EEF7FB;
+}
+.navigation li a:hover {
+    color: #002929;
+    background-color: #F49F0A;
+}
+.navigation a.active {
+    background-color: #00A3A3;
+}
+.mobile-view li {
+    display: block;
+}
+/* ==== MAIN MENU END ==== */
+
+section.home_hero {
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+    background: linear-gradient(rgba(254, 251, 235, .2), rgba(254, 251, 235, .5)), url(../images/arto-marttinen-145984-unsplash.jpg) center / auto 100% fixed no-repeat;
+    padding: 4em 0 6em 0;
+    margin: 0;
+    border-bottom: 17px solid #F08700;
+}
+section.sub_hero {
+    background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center / 100% scroll no-repeat;
+    padding: 2em 0 3em 0;
+    margin: 0;
+    border-bottom: 17px solid #F08700;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 100%;
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    margin: 1.5em 0 .5em 0; 
+}
+main h2:first-child {
+    margin-top: 0;
+}
+main.two-col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;
+}
+main.two-col section {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+/* ==== WEATHER SUMMARY ==== */
+.weather-summary-hero {
+    margin: 0;
+}
+.weather-summary-hero img {
+    width: 100%;
+}
+.weather-summary {
+    max-width: 100%;
+    margin: 1em;
+    background: linear-gradient(rgba(244, 240, 226, 1), rgba(244, 240, 226, .85));
+    padding: 1.25em .75em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5em;
+    border: 5px solid rgba(62,54,24,.95);
+    font-size: .85em;
+}
+.weather-summary h2 {
+    grid-column: span 2;
+    justify-self: center;
+    margin: 0;
+    border-bottom: 1px solid #006666;
+}
+.weather-summary section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.weather-summary stats-left.section {
+    grid-column: 1;
+}
+section.stats-left ul li {
+    text-align: right;
+    color: #F08700;
+}
+section.stats-right {
+    grid-column: 2;
+}
+/* ==== WEATHER SUMMARY END ==== */
+
+/* ==== FIVE DAY FORCAST ==== */
+section.forcast {
+    margin: 2em;
+}
+.forcast h2 {
+    text-align: center;
+}
+.forcast ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+}
+.forcast ul li {
+    border: 1px solid #002929;
+    text-align: center;
+    padding-bottom: .4em;
+}
+.forcast ul li strong {
+    display: block;
+    background-color: #006666;
+    padding: .3em 2em;
+    white-space: nowrap;
+    color: #ffffff;
+    font-weight: 500;
+}
+.forcast ul li img {
+    display: block;
+    margin: .4em auto;
+    width: 50px;
+}
+/* ==== FIVE DAY FORCAST END ==== */
+
+/* ==== TOWN NEWS ==== */
+.town-news {
+    background-color: #EEF7FB;
+    padding: 1em;
+}
+article.town-news img {
+    width: 100%;
+    margin: 1em auto;
+}
+/* ==== TOWN NEWS END ==== */
+
+/* ==== CONTACT INFORMATION ==== */
+.contact {
+    margin: 2em 1em 0 1em;
+}
+.contact img {
+    width: 100%;
+}
+.contact-info {
+    margin: 1em 0;
+    text-align: center;
+}
+.contact-info h4 {
+    margin: 0;
+}
+.contact-info p {
+    margin-top: .25em;
+}
+ul.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+.social-icons li {
+    padding-right: .2em;
+}
+.social-icons li a {
+    color: #F08700;
+}
+/* ==== CONTACT INFORMATION END ==== */
+
+/* FOOTER */
+footer {
+    max-width: 100%;
+    background-color: #002929;
+    padding: 1em;
+    color: #EEF7FB;
+}
+footer p {
+    text-align: center;
+}
+footer p:last-of-type {
+    margin-bottom: .5em;
+}
+footer a {
+    color: #EEF7FB;
+}
+footer a:hover {
+    color: #F08700;
+}
