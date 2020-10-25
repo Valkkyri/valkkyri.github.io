@@ -59,31 +59,32 @@ section#global-header-top {
     flex-direction: column;
     align-items: center;
     padding-top: 1em;
+    text-align: center;
 }
 img.header-logo {
     width: 10rem;
-    margin: 0 auto .5em auto;
+    margin: 0 auto;
 }
-h1.tagline-top {
+#global-header-top h1 {
     margin: 0;
-    font-size: 1.2em;
-    text-align: center;
 }
-h1.tagline-bottom {
+h1 span.tagline-top {
+    margin: 0;
+    font-size: .6em;
+}
+h1 span.tagline-bottom {
     margin: 0;
     letter-spacing: .1em;
     text-transform: uppercase;
-    text-align: center;
 }
-h1.tagline {
+h1 span.tagline {
     display: none;
 }
 section#global-header-top p {
     font-weight: 500;
     font-style: italic;
     color: #006666;
-    text-align: center;
-    margin-bottom: 0;
+    margin: .5 0 0 0;
 }
 /* ==== MAIN MENU ==== */
 nav {
@@ -134,7 +135,7 @@ section.home_hero {
 section.sub_hero {
     background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center / 100% scroll no-repeat;
     padding: 2em 0 3em 0;
-    margin: 0;
+    margin: 0 0 1em 0;
     border-bottom: 17px solid #F08700;
 }
 
@@ -252,9 +253,12 @@ article.town-news img {
 /* ==== CONTACT INFORMATION ==== */
 .contact {
     margin: 2em 1em 0 1em;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .contact img {
     width: 100%;
+    margin-bottom: 1em;
 }
 .contact-info {
     margin: 1em 0;

@@ -5,7 +5,6 @@
         flex-direction: row;
         justify-content: center;
         padding-top: 0;
-        align-items: center;
     }
     section#global-header-top p {
         text-align: left;
@@ -15,15 +14,19 @@
         padding: 0 1em;
         width: 5em;
     }
-    h1.tagline-top {
+    h1 span.tagline-top {
         display: none;
     }
-    h1.tagline-bottom {
+    h1 span.tagline-bottom {
         display: none;
     }
-    h1.tagline {
+    h1 span.tagline {
         display: block;
-        font-size: 1.4em;
+        font-size: .7em;
+        margin: 1em 0 0 0;
+    }
+    section#global-header-top p {
+        margin-top: 0;
     }
     section.home_hero {
         background-size: auto 100%;
@@ -122,4 +125,26 @@
         margin: 1em;
     }
     /* ==== TOWN NEWS END ==== */
+
+    /* ==== CONTACT INFORMATION ==== */
+    .contact {
+        margin: 2em 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .contact img {
+        width: 50vw;
+    }
+    .contact-info {
+        text-align: left;
+        margin-left: 2em;
+        align-self: center;
+    }
+    ul.social-icons {
+        justify-content: start;
+        margin: 1em 0 0 0;
+    }
+    /* ==== CONTACT INFORMATION END ==== */
 }

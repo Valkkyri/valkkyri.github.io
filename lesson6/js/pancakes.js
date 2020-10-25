@@ -7,7 +7,4 @@ function pancakes() {
     if (day == 5) {
         document.querySelector('#friday-only').style.display = 'block';
     }
-    else {
-        document.querySelector('#friday-only').style.display = 'none';
-    }
 }
