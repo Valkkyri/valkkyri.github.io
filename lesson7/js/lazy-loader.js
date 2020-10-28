@@ -25,7 +25,7 @@ function imagePreload(image) {
     if (!source) {
         return;
     }
-    image.src = source;    
+    image.src = source;
 };
 
 imagesLazy.forEach(image => {
@@ -56,10 +56,14 @@ imagesLazy.forEach(image => {
 
 
 // This function uses JS to load the images from the data-src only after the rest of the page has finished loading, the placeholder will display until then.
+// let imagesToLoad = document.querySelectorAll('img[data-src]');
 // const loadImages = (image) => {
-//     image.setAttribute("src", image.getAttribute("data-src"));
-//     image.onload = () => {
-//         image.removeAttribute("data-src");
-//     }
-// }
+//   image.setAttribute('src', image.getAttribute('data-src'));
+//   image.onload = () => {
+//     image.removeAttribute('data-src');
+//   };
+// };
+// imagesToLoad.forEach((img) => {
+//     loadImages(img);
+// });
 /***********************************EXAMPLE CODE END******************************************/
