@@ -1,0 +1,48 @@
+/* DESKTOP CSS */
+@media only screen and (min-width: 62.5em) {
+    section#global-header-top {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    img.header-logo {
+        width: 7em;
+    }
+    h1 span.tagline {
+        font-size: .85em;
+    }
+    h1 span.tagline {
+        margin: 1em 0 0 0;
+    }
+    section#global-header-top p {
+        margin-top: .5em;
+    }
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    nav ul {
+        font-size: 1em;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    section.home_hero {
+        background-size: 100%;
+        background-position: top;
+    }
+
+    /* ==== WEATHER GALLERY ==== */
+    section.weather-gallery {
+        grid-template-columns: repeat(3, 1fr);        
+    }
+    section.weather-gallery figure {
+        box-shadow: 0 0 15px -5px #333;
+    }
+    section.weather-gallery figcaption {
+        padding: .25em .5em;
+    }
+    section.weather-gallery figure:hover {
+        margin: 1em .5em;
+        box-shadow: 0 0 50px #333;
+    }
+    /* ==== WEATHER GALLERY END ==== */
+}

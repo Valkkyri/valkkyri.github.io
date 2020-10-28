@@ -1,0 +1,76 @@
+/* TABLET CSS */
+@media only screen and (min-width: 37.5em) {
+    /* TOP SECTION */
+    section#global-header-top {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0;
+    }
+    section#global-header-top p {
+        text-align: left;
+    }
+    img.header-logo {
+        margin: 1em 0;
+        padding: 0 1em;
+        width: 5em;
+    }
+    h1 span.tagline-top {
+        display: none;
+    }
+    h1 span.tagline-bottom {
+        display: none;
+    }
+    h1 span.tagline {
+        display: block;
+        font-size: .7em;
+        margin: 1em 0 0 0;
+    }
+    section#global-header-top p {
+        margin-top: 0;
+    }
+    section.home_hero {
+        background-size: auto 100%;
+    }
+    /* ==== MAIN MENU ==== */
+    nav {
+        margin-top: 0;
+    }
+    nav ul {
+        font-size: .8em;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        align-content: stretch;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: flex;
+        white-space: nowrap;
+    }
+    .navigation li a {
+        padding: .75em 1.25em;
+    }
+    /* ==== MAIN MENU END ==== */
+
+    /* MAIN CONTENT */
+    main.two-col {
+        flex-direction: row;
+    }
+    main.two-col section {
+        width: 50%;        
+    }
+
+    /* ==== WEATHER GALLERY ==== */
+    section.weather-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin: 0 1em;
+    }
+    section.weather-gallery figure {
+        margin: 1em .5em;
+    }
+    /* ==== WEATHER GALLERY END ==== */
+}
