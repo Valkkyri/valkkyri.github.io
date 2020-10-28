@@ -1,0 +1,16 @@
+main {
+    width: 400px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+img[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+    filter: blur(.2em);
+}
+img {
+    filter: blur(0);
+    transition: filter 0.5s;
+    margin: 5em 0;
+}
