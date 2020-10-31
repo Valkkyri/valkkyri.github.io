@@ -84,7 +84,7 @@ section#global-header-top p {
     font-weight: 500;
     font-style: italic;
     color: #006666;
-    margin: .5 0 0 0;
+    margin-top: .05em;
 }
 /* ==== MAIN MENU ==== */
 nav {
