@@ -134,7 +134,7 @@ section.home_hero {
     border-bottom: 17px solid #F08700;
 }
 section.sub_hero {
-    background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center / 100% scroll no-repeat;
+    background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center scroll no-repeat;
     padding: 2em 0 3em 0;
     margin: 0 0 1em 0;
     border-bottom: 17px solid #F08700;
@@ -234,11 +234,14 @@ article.town-news img {
     width: 100%;
     margin: 1em auto;
 }
+article.town-news {
+    margin-bottom: 2em;
+}
 /* ==== TOWN NEWS END ==== */
 
 /* ==== CONTACT INFORMATION ==== */
 .contact {
-    margin: 2em 1em 0 1em;
+    margin: 0 1em;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -287,6 +290,107 @@ ul.social-icons {
     text-align: center;
 }
 /* ==== WEATHER GALLERY END ==== */
+
+/* ==== STORM CENTER FORM ==== */
+form {
+    width: 80%;
+    margin: 1em auto 3em auto;
+}
+form h2 {
+    text-align: center;
+}
+form input:invalid:required {
+    border-bottom: 4px solid #F08700;
+}
+form input:valid:required {
+    border-bottom: 4px solid green;
+}
+form input, form select, form textarea {
+    margin: .5em 0;
+    border: 1px solid #2b2f32;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+    padding: .2em .5em;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+form span {
+    margin-top: 4%;
+    font-weight: 700;
+}
+span.req {
+    color: red;
+    margin: 0;
+}
+form p {
+    text-align: center;
+    font-style: italic;
+    margin-top: .25em;
+}
+span.range-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#stormseverity {
+    width: 85%;
+}
+#ratingvalue {
+    width: 15%;
+    text-align: right;
+    margin-top: 0;
+}
+label#danger {
+    display: flex;
+    flex-direction: column;
+}
+label#danger span:last-of-type {
+    display: flex;
+    flex-direction: column;
+    margin-top: .25em;
+}
+label#danger span:last-of-type label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label#danger span:last-of-type label input {
+    margin-right: 2%;
+}
+label#moreinfo {
+    align-items: flex-start;
+}
+label#moreinfo textarea {
+    width: 100%;
+    height: 4em;
+}
+form button {
+    background-color: #002929;
+    color: #ffffff;
+    padding: .75em 2em;
+    margin: 1em auto 0 auto;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+form button:hover {
+    cursor: pointer;
+    background-color: #006666;
+}
+/* ==== STORM CENTER FORM END ==== */
+
+/* ==== THANKS PAGE ==== */
+section.thanks {
+    text-align: center;
+    padding: 0 1em;
+}
+section.thanks p {
+    margin-bottom: 0;
+}
+/* ==== THANKS PAGE END ==== */
 
 /* FOOTER */
 footer {

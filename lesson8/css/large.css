@@ -51,4 +51,19 @@
         width: 50%;
     }
     /* ==== CONTACT INFORMATION END ==== */
+
+    /* ==== STORM CENTER FORM ==== */
+    form {
+        width: 60%;
+    }
+    #stormseverity {
+        width: 95%;
+    }
+    #ratingvalue {
+        width: 5%;
+    }
+    label#danger span:last-of-type {
+        margin: 0 0 0 3%;
+    }
+    /* ==== STORM CENTER FORM END ==== */
 }

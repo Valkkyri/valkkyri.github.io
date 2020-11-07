@@ -35,61 +35,19 @@
                 <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="#" class="active">Storm Center</a></li>
+                <li><a href="#">Storm Center</a></li>
                 <li><a href="#">Gallery</a></li>
             </ul>
         </nav>
         <section class="sub_hero">
-            <h2>Storm Center</h2>
+            <h2>Thank You</h2>
         </section>
     </header>
     <main>
-        <form method="GET" action="thanks.html">
-            <h2>Your Information</h2>
-            <label for="name"><span>Full Name<span class="req">*</span></span> <input type="text" id="name" name="name" placeholder="Full Name" pattern="[A-Z a-z]+" minlength="5" required></label>
-            <label for="email"><span>Email Address</span> <input type="email" id="email" name="email" placeholder="ex: someone@website.com"></label>
-            <label for="phone"><span>Phone Number<span class="req">*</span></span> <input type="tel" id="phone" name="phone" placeholder="Phone Number" required></label>
-            <label for="zipcode"><span>Zip Code<span class="req">*</span></span> <input type="number" id="zipcode" name="zipcode" placeholder="Zip Code" required></label>
-            <p><span class="req">*</span> required</p>
-            <h2>Storm Information</h2>
-            <label for="stormdate"><span>Storm Date</span> <input type="date" id="stormdate" name="stormdate" placeholder="Storm Date"></label>
-            <label for="stormtype"><span>Storm Type</span>
-                <select id="stormtype" name="stormtype">
-                    <option value="" disabled selected>--- Storm Type ---</option>
-                    <option value="Flash Flood">Flash Flood</option>
-                    <option value="Hail">Hail</option>
-                    <option value="Hurricane">Hurricane</option>
-                    <option value="Thunderstorm">Thunderstorm</option>
-                    <option value="Tornado">Tornado</option>
-                </select>
-            </label>
-            <label for="stormseverity">
-                <span>Storm Severity<br>(between 1 &amp; 10)</span>
-                <span class="range-input"><input type="range" id="stormseverity" name="stormseverity" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span></span>
-            </label>
-            <label><span for="stormregion">Storm Region</span>
-                <select id="stormregion" name="stormregion">
-                    <option value="" disabled selected>--- Select Region ---</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Soda Springs">Soda Springs</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                </select>
-            </label>
-            <label for="danger" id="danger">
-                <span>Are you in danger?</span>
-                <span>
-                    <label for="danger-yes"><input type="radio" id="danger-yes" name="danger" value="Yes"> Yes</label>
-                    <label for="danger-no"><input type="radio" id="danger-no" name="danger" value="No"> No</label>
-                    <label for="danger-maybe"><input type="radio" id="danger-maybe" name="danger" value="Maybe"> Maybe</label>
-                </span>
-            </label>
-            <h2>Comments or Questions</h2>
-            <label for="moreinfo" id="moreinfo"><span>More information</span>
-                <textarea id="moreinfo" name="moreinfo"></textarea>
-            </label>
-            <button name="button" type="submit">Sumbit Storm Report</button>
-        </form>
+        <section class="thanks">
+            <h3>Thank you for submitting your storm report!</h3>
+            <p>If you have another report you'd like to submit, please visit the <a href="stormcenter.html">Storm Center</a>.</p>
+        </section>
         <section class="contact">
             <img src="images/map.jpg" alt="Lower South East Idaho">
             <section class="contact-info">

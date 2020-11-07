@@ -50,9 +50,13 @@
         white-space: nowrap;
     }
     .navigation li a {
-        padding: .75em 1.25em;
+        padding: .75em .85em;
     }
     /* ==== MAIN MENU END ==== */
+
+    section.sub_hero {
+        background: linear-gradient(rgba(187, 222, 240, .7), rgba(187, 222, 240, .7)), url(../images/fancycrave-239752-unsplash.jpg) center / 100% scroll no-repeat;
+    }
 
     /* MAIN CONTENT */
     main.two-col {
@@ -159,4 +163,53 @@
         margin: 1em .5em;
     }
     /* ==== WEATHER GALLERY END ==== */
+
+    /* ==== STORM CENTER FORM ==== */
+    label {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    form input, form select {
+        width: 65%;
+    }
+    form span {
+        width: 35%;
+        text-align: right;
+        margin: 0 4% 0 0;
+    }
+    span.range-input {
+        width: 65%;
+        margin: 0;
+    }
+    #stormseverity {
+        width: 90%;
+    }
+    #ratingvalue {
+        width: 10%;
+    }
+    label#danger {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    label#danger span:first-of-type {
+        width: 35%;
+        margin-right: 0;
+    }
+    label#danger span:last-of-type {
+        width: 65%;
+        margin: .5em 0 0 2%;
+    }
+    label#danger span:last-of-type label {
+        justify-content: flex-start;
+    }
+    label#danger span:last-of-type label input {
+        margin-right: 2%;
+        width: 10%;
+    }
+    label#moreinfo textarea {
+        width: 65%;
+    }
+
+    /* ==== STORM CENTER FORM END ==== */
 }
