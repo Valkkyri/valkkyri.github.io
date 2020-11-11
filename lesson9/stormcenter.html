@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower South East Idaho Weather | Know tomorrow's weather today</title>
+    <meta name="description" content="Get weather information for Lower South East Idaho, including: Preston, Soda Spring, and Fish Haven.">
+    <script src="https://kit.fontawesome.com/01cddefc03.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rosario:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>        
+        <section id="friday-only">
+            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        </section>
+        <section id="global-header-top">
+            <a href="index.html"><img class="header-logo" src="images/weather-logo-02.png" alt="Lower South East Idaho Weather" /></a>            
+            <section>
+                <h1>
+                    <span class="tagline-top">Lower South East Idaho</span>
+                    <span class="tagline-bottom">Weather</span>
+                    <span class="tagline">Lower South East Idaho Weather</span>
+                </h1>
+                <p>Know tomorrow's weather today</p>
+            </section>
+        </section>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="mobile-nav">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#" class="active">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <section class="sub_hero">
+            <h2>Storm Center</h2>
+        </section>
+    </header>
+    <main>
+        <form method="GET" action="thanks.html">
+            <h2>Your Information</h2>
+            <label for="name"><span>Full Name<span class="req">*</span></span> <input type="text" id="name" name="name" placeholder="Full Name" pattern="[A-Z a-z]+" minlength="5" required></label>
+            <label for="email"><span>Email Address</span> <input type="email" id="email" name="email" placeholder="ex: someone@website.com"></label>
+            <label for="phone"><span>Phone Number<span class="req">*</span></span> <input type="tel" id="phone" name="phone" placeholder="Phone Number" required></label>
+            <label for="zipcode"><span>Zip Code<span class="req">*</span></span> <input type="number" id="zipcode" name="zipcode" placeholder="Zip Code" required></label>
+            <p><span class="req">*</span> required</p>
+            <h2>Storm Information</h2>
+            <label for="stormdate"><span>Storm Date</span> <input type="date" id="stormdate" name="stormdate" placeholder="Storm Date"></label>
+            <label for="stormtype"><span>Storm Type</span>
+                <select id="stormtype" name="stormtype">
+                    <option value="" disabled selected>--- Storm Type ---</option>
+                    <option value="Flash Flood">Flash Flood</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </select>
+            </label>
+            <label for="stormseverity">
+                <span>Storm Severity<br>(between 1 &amp; 10)</span>
+                <span class="range-input"><input type="range" id="stormseverity" name="stormseverity" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span></span>
+            </label>
+            <label><span for="stormregion">Storm Region</span>
+                <select id="stormregion" name="stormregion">
+                    <option value="" disabled selected>--- Select Region ---</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </label>
+            <label for="danger" id="danger">
+                <span>Are you in danger?</span>
+                <span>
+                    <label for="danger-yes"><input type="radio" id="danger-yes" name="danger" value="Yes"> Yes</label>
+                    <label for="danger-no"><input type="radio" id="danger-no" name="danger" value="No"> No</label>
+                    <label for="danger-maybe"><input type="radio" id="danger-maybe" name="danger" value="Maybe"> Maybe</label>
+                </span>
+            </label>
+            <h2>Comments or Questions</h2>
+            <label for="moreinfo" id="moreinfo"><span>More information</span>
+                <textarea id="moreinfo" name="moreinfo"></textarea>
+            </label>
+            <button name="button" type="submit">Sumbit Storm Report</button>
+        </form>
+        <section class="contact">
+            <img src="images/map.jpg" alt="Lower South East Idaho">
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <h4>Address</h4>
+                <p>1234 Middle St<br>
+                Somewhere Idaho 83400</p>
+                <h4>Phone</h4>
+                <p>208-208-2080</p>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Lower South East Idaho Weather | Melissa Gamble</p>
+        <p><span id="todaysDate"></span></p>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/current-date.js"></script>
+    <script src="js/pancakes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/lazy-loader.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
