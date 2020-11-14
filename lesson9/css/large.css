@@ -29,7 +29,6 @@
         background-size: 100%;
         background-position: top;
     }
-
     /* ==== WEATHER GALLERY ==== */
     section.weather-gallery {
         grid-template-columns: repeat(3, 1fr);        
@@ -66,4 +65,37 @@
         margin: 0 0 0 3%;
     }
     /* ==== STORM CENTER FORM END ==== */
+
+    /* ==== HOME PAGE TOWNS ==== */
+    section.town-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section.town-info section {
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+    }
+    section.town-info section:nth-child(odd) {
+        flex-direction: column;
+    }
+    section.town-info section img {
+        width: 100%;
+        margin-right: 0;
+    }
+    section.town-info section:nth-child(odd) img {
+        margin-right: 0;
+        margin-left: 0;
+    }    
+    /* ==== HOME PAGE TOWNS END ==== */
+}
+
+@media only screen and (min-width: 51em) {
+    /* ==== WEATHER SUMMARY ==== */
+    /* ==== HOME QUICK WEATHER ==== */
+    section.quick-weather-info .weather-summary {
+        font-size: .85em;
+    }
+    /* ==== HOME QUICK WEATHER END ==== */
+    /* ==== WEATHER SUMMARY END ==== */
 }

@@ -50,7 +50,7 @@
         white-space: nowrap;
     }
     .navigation li a {
-        padding: .75em .85em;
+        padding: .75em .75em;
     }
     /* ==== MAIN MENU END ==== */
 
@@ -110,6 +110,28 @@
     section.stats-right {
         grid-column: 2;
     }
+    /* ==== HOME QUICK WEATHER ==== */
+    section.quick-weather-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section.quick-weather-info h2 {
+        grid-column: 1/-1;
+        text-align: left;
+        margin: 0;
+    }
+    section.quick-weather-info .weather-summary {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        margin: 1.25em .25em .5em .25em;
+        background: #ffffff;
+        border: 3px solid #006666;
+        font-size: .61em;
+        box-shadow: none;
+    }
+    /* ==== HOME QUICK WEATHER END ==== */
     /* ==== WEATHER SUMMARY END ==== */
 
     /* ==== FIVE DAY FORCAST ==== */
@@ -213,6 +235,29 @@
     label#moreinfo-container textarea {
         width: 65%;
     }
-
     /* ==== STORM CENTER FORM END ==== */
+
+    /* ==== HOME PAGE TOWNS ==== */
+    section.town-info {
+        display: grid;
+    }
+    section.town-info section {
+        display: flex;        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    section.town-info section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    section.town-info section img {
+        width: 60%;
+        margin-right: 1em;
+    }
+    section.town-info section:nth-child(odd) img {
+        margin-right: 0;
+        margin-left: 1em;
+    }    
+    /* ==== HOME PAGE TOWNS END ==== */
 }

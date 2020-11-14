@@ -31,12 +31,12 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" class="mobile-nav">&#9776; Menu</a></li>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="../lesson6/preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
         <section class="home_hero">
@@ -44,7 +44,77 @@
             <h3>Serving the Areas of Preston, Soda Springs, and Fish Haven</h3>
         </section>
     </header>
-    <main>        
+    <main>
+        <section class="town-info"></section>
+        <section class="quick-weather-info">
+            <h2>Quick Weather Updates</h2>
+            <!-- FISH HAVEN -->
+            <section class="weather-summary">
+                <h3>Fish Haven</h3>                
+                <section class="stats-left">
+                    <ul>
+                        <li>Currently:</li>
+                        <li>High:</li>
+                        <li>Wind Chill:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>                        
+                    </ul>
+                </section>
+                <section class="stats-right">
+                    <ul>
+                        <li>Sunny</li>
+                        <li><span class="high-temp-fish">43</span>&deg;F</li>
+                        <li><span class="wind-chill-fish"></span></li>
+                        <li>28%</li>
+                        <li><span class="wind-speed-fish">4</span> mph</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- PRESTON -->
+            <section class="weather-summary">
+                <h3>Preston</h3>                
+                <section class="stats-left">
+                    <ul>
+                        <li>Currently:</li>
+                        <li>High:</li>
+                        <li>Wind Chill:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>                        
+                    </ul>
+                </section>
+                <section class="stats-right">
+                    <ul>
+                        <li>Sunny</li>
+                        <li><span class="high-temp-preston">45</span>&deg;F</li>
+                        <li><span class="wind-chill-preston"></span></li>
+                        <li>18%</li>
+                        <li><span class="wind-speed-preston">5</span> mph</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- SODA SPRINGS -->
+            <section class="weather-summary">
+                <h3>Soda Springs</h3>                
+                <section class="stats-left">
+                    <ul>
+                        <li>Currently:</li>
+                        <li>High:</li>
+                        <li>Wind Chill:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>                  
+                    </ul>
+                </section>
+                <section class="stats-right">
+                    <ul>
+                        <li>Sunny</li>
+                        <li><span class="high-temp-soda">43</span>&deg;F</li>
+                        <li><span class="wind-chill-soda"></span></li>
+                        <li>20%</li>
+                        <li><span class="wind-speed-soda">8</span> mph</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
         <section class="contact">
             <img src="images/map.jpg" alt="Lower South East Idaho">
             <section class="contact-info">
@@ -73,5 +143,7 @@
     <script src="js/webfont.js"></script>
     <script src="js/lazy-loader.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/town-data.js"></script>
+    <script src="js/windchill-home.js"></script>
 </body>
 </html>
