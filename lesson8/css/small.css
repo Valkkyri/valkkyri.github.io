@@ -312,7 +312,7 @@ form input, form select, form textarea {
 input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
     padding: .2em .5em;
 }
-label {
+label, div#danger {
     display: flex;
     flex-direction: column;
 }
@@ -342,27 +342,27 @@ span.range-input {
     text-align: right;
     margin-top: 0;
 }
-label#danger {
+div#danger {
     display: flex;
     flex-direction: column;
 }
-label#danger span:last-of-type {
+div#danger span:last-of-type {
     display: flex;
     flex-direction: column;
     margin-top: .25em;
 }
-label#danger span:last-of-type label {
+div#danger span:last-of-type label {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-label#danger span:last-of-type label input {
+div#danger span:last-of-type label input {
     margin-right: 2%;
 }
-label#moreinfo {
+label#moreinfo-container {
     align-items: flex-start;
 }
-label#moreinfo textarea {
+label#moreinfo-container textarea {
     width: 100%;
     height: 4em;
 }

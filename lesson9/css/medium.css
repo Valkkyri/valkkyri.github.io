@@ -165,7 +165,7 @@
     /* ==== WEATHER GALLERY END ==== */
 
     /* ==== STORM CENTER FORM ==== */
-    label {
+    label, div#danger {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -188,26 +188,29 @@
     #ratingvalue {
         width: 10%;
     }
-    label#danger {
+    div#danger {
         flex-direction: row;
         align-items: flex-start;
     }
-    label#danger span:first-of-type {
+    div#danger span:first-of-type {
         width: 35%;
         margin-right: 0;
     }
-    label#danger span:last-of-type {
+    div#danger span:last-of-type {
         width: 65%;
         margin: .5em 0 0 2%;
     }
-    label#danger span:last-of-type label {
+    div#danger span:last-of-type label {
         justify-content: flex-start;
     }
-    label#danger span:last-of-type label input {
+    div#danger span:last-of-type label input {
         margin-right: 2%;
         width: 10%;
     }
-    label#moreinfo textarea {
+    label#moreinfo-container span {
+        margin-top: .25em
+    }
+    label#moreinfo-container textarea {
         width: 65%;
     }
 

@@ -52,23 +52,24 @@
             <label for="zipcode"><span>Zip Code<span class="req">*</span></span> <input type="number" id="zipcode" name="zipcode" placeholder="Zip Code" required></label>
             <p><span class="req">*</span> required</p>
             <h2>Storm Information</h2>
-            <label for="stormdate"><span>Storm Date</span> <input type="date" id="stormdate" name="stormdate" placeholder="Storm Date"></label>
+            <label for="stormdate"><span>Storm Date</span> <input type="date" id="stormdate" name="stormdate"></label>
             <label for="stormtype"><span>Storm Type</span>
-                <select id="stormtype" name="stormtype">
+                <input list="stormtypes" name="stormtype" id="stormtype">
+                <datalist id="stormtypes">
                     <option value="" disabled selected>--- Storm Type ---</option>
                     <option value="Flash Flood">Flash Flood</option>
                     <option value="Hail">Hail</option>
                     <option value="Hurricane">Hurricane</option>
                     <option value="Thunderstorm">Thunderstorm</option>
                     <option value="Tornado">Tornado</option>
-                </select>
+                </datalist>
             </label>
             <label for="stormseverity">
                 <span>Storm Severity<br>(between 1 &amp; 10)</span>
                 <span class="range-input"><input type="range" id="stormseverity" name="stormseverity" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5</span></span>
             </label>
-            <label><span for="stormregion">Storm Region</span>
+            <label for="stormregion"><span>Storm Region</span>
                 <select id="stormregion" name="stormregion">
                     <option value="" disabled selected>--- Select Region ---</option>
                     <option value="Preston">Preston</option>
@@ -76,16 +77,16 @@
                     <option value="Fish Haven">Fish Haven</option>
                 </select>
             </label>
-            <label for="danger" id="danger">
+            <div id="danger">
                 <span>Are you in danger?</span>
                 <span>
                     <label for="danger-yes"><input type="radio" id="danger-yes" name="danger" value="Yes"> Yes</label>
                     <label for="danger-no"><input type="radio" id="danger-no" name="danger" value="No"> No</label>
                     <label for="danger-maybe"><input type="radio" id="danger-maybe" name="danger" value="Maybe"> Maybe</label>
                 </span>
-            </label>
+            </div>
             <h2>Comments or Questions</h2>
-            <label for="moreinfo" id="moreinfo"><span>More information</span>
+            <label for="moreinfo" id="moreinfo-container"><span>More information</span>
                 <textarea id="moreinfo" name="moreinfo"></textarea>
             </label>
             <button name="button" type="submit">Sumbit Storm Report</button>

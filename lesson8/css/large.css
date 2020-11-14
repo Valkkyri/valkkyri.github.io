@@ -62,7 +62,7 @@
     #ratingvalue {
         width: 5%;
     }
-    label#danger span:last-of-type {
+    div#danger span:last-of-type {
         margin: 0 0 0 3%;
     }
     /* ==== STORM CENTER FORM END ==== */
