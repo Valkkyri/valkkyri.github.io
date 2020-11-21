@@ -200,12 +200,18 @@ section.quick-weather-info h2 {
 }
 section.quick-weather-info .weather-summary h3 {
     font-size: 1.3em;
+    color: #F08700;
+    border-bottom: none;
 }
 section.quick-weather-info .weather-summary {
     background: #ffffff;
     border: 3px solid #006666;
     font-size: 1em;
 }
+section.quick-weather-info .weather-summary .stats-left ul li {
+    color: #006666;
+}
+
 /* ==== HOME QUICK WEATHER END ==== */
 /* ==== WEATHER SUMMARY END ==== */
 
