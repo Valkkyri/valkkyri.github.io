@@ -81,7 +81,7 @@ fetch(sodaSpringsAPIurl)
 function calculateWindChill(temp, windSpeed) {
     if (temp <= 50 && windSpeed > 3) {
         windChill = 35.74 + (0.6215 * temp) - (35.75 * windSpeed ** 0.16) + (0.4275 * temp * windSpeed ** 0.16);
-        windChill = `${Math.round(windChill.toFixed(2))} &deg;F`;
+        windChill = `${Math.round(windChill.toFixed(2))}&deg;F`;
         return windChill;
     }
     else {
