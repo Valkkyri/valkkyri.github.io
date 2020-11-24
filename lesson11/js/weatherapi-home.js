@@ -1,0 +1,91 @@
+// Fish Haven
+const fishHavenAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+// OR by geographic coordinates https://api.openweathermap.org/data/2.5/weather?lat=42.037706715416384&lon=-111.39593646465846&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial
+
+// Preston
+const prestonAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+
+// Soda Springs
+const sodaSpringsAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+
+fetch(fishHavenAPIurl)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        /* ------ current weather start ------ */
+        //console.log(jsObject);
+        let currentConditions = jsObject.list[0].weather[0].main;
+        let temp = jsObject.list[0].main.temp.toFixed(1);
+        let windSpeed = jsObject.list[0].wind.speed.toFixed(0);
+        let humidity = jsObject.list[0].main.humidity;
+        let windChill = calculateWindChill(temp, windSpeed);
+        
+        let summaryUL = document.createElement("ul");
+        let summarydetails = [`${currentConditions}`, `<span id="high-temp">${temp}</span>&deg;F`, `${windChill}`, `${humidity}%`, `<span id="wind-speed">${windSpeed}</span> mph`];
+        summarydetails.forEach(detail => {
+            let li = document.createElement("li");
+            li.innerHTML = detail;
+            summaryUL.appendChild(li);
+        });
+        
+        document.querySelector(".fishhaven.stats-right").appendChild(summaryUL);
+        /* ------ current weather end ------ */
+    });
+
+fetch(prestonAPIurl)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        /* ------ current weather start ------ */
+        //console.log(jsObject);
+        let currentConditions = jsObject.list[0].weather[0].main;
+        let temp = jsObject.list[0].main.temp.toFixed(1);
+        let windSpeed = jsObject.list[0].wind.speed.toFixed(0);
+        let humidity = jsObject.list[0].main.humidity;
+        let windChill = calculateWindChill(temp, windSpeed);
+        
+        let summaryUL = document.createElement("ul");
+        let summarydetails = [`${currentConditions}`, `<span id="high-temp">${temp}</span>&deg;F`, `${windChill}`, `${humidity}%`, `<span id="wind-speed">${windSpeed}</span> mph`];
+        summarydetails.forEach(detail => {
+            let li = document.createElement("li");
+            li.innerHTML = detail;
+            summaryUL.appendChild(li);
+        });
+        
+        document.querySelector(".preston.stats-right").appendChild(summaryUL);
+        /* ------ current weather end ------ */
+    });
+
+fetch(sodaSpringsAPIurl)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        /* ------ current weather start ------ */
+        //console.log(jsObject);
+        let currentConditions = jsObject.list[0].weather[0].main;
+        let temp = jsObject.list[0].main.temp.toFixed(1);
+        let windSpeed = jsObject.list[0].wind.speed.toFixed(0);
+        let humidity = jsObject.list[0].main.humidity;
+        let windChill = calculateWindChill(temp, windSpeed);
+        
+        let summaryUL = document.createElement("ul");
+        let summarydetails = [`${currentConditions}`, `<span id="high-temp">${temp}</span>&deg;F`, `${windChill}`, `${humidity}%`, `<span id="wind-speed">${windSpeed}</span> mph`];
+        summarydetails.forEach(detail => {
+            let li = document.createElement("li");
+            li.innerHTML = detail;
+            summaryUL.appendChild(li);
+        });
+        
+        document.querySelector(".sodasprings.stats-right").appendChild(summaryUL);
+        /* ------ current weather end ------ */
+    });
+
+// Calculate Wind Chill
+function calculateWindChill(temp, windSpeed) {
+    if (temp <= 50 && windSpeed > 3) {
+        windChill = 35.74 + (0.6215 * temp) - (35.75 * windSpeed ** 0.16) + (0.4275 * temp * windSpeed ** 0.16);
+        windChill = `${Math.round(windChill.toFixed(2))} &deg;F`;
+        return windChill;
+    }
+    else {
+        windChill = "N/A";
+        return windChill;
+    }
+}
