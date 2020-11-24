@@ -47,4 +47,4 @@ function calculateWindChill(temp, windSpeed) {
         windChill = "N/A";
         return windChill;
     }
-}
+};
