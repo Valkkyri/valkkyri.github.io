@@ -1,11 +1,5 @@
-// Fish Haven
-const fishHavenAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
-// OR by geographic coordinates https://api.openweathermap.org/data/2.5/weather?lat=42.037706715416384&lon=-111.39593646465846&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial
-
-// Preston
+const fishHavenAPIurl = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
 const prestonAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
-
-// Soda Springs
 const sodaSpringsAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
 
 const apiURLs = [fishHavenAPIurl, prestonAPIurl, sodaSpringsAPIurl];

@@ -6,8 +6,7 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         let towns = jsonObject["towns"];
-        let townLinks = ["#", "preston", "#"];
-        //let townLinks = ["fish-haven", "preston", "soda-springs"];
+        let townLinks = ["fish-haven", "preston", "soda-springs"];
         let main3 = towns.filter(main3 => (main3.name == "Preston" || main3.name == "Fish Haven" || main3.name == "Soda Springs"));
         let i = 0;
         main3.forEach(town => {

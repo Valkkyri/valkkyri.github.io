@@ -217,7 +217,6 @@ section.quick-weather-info .weather-summary {
 section.quick-weather-info .weather-summary .stats-left ul li {
     color: #006666;
 }
-
 /* ==== HOME QUICK WEATHER END ==== */
 /* ==== WEATHER SUMMARY END ==== */
 
@@ -271,6 +270,21 @@ article.town-news {
 }
 /* ==== TOWN NEWS END ==== */
 
+/* ==== TOWN EVENTS ==== */
+section.events {
+    padding: 1em;
+    text-align: center;
+}
+section.events ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+section.events ul li {
+    padding: .2em 0;
+}
+/* ==== TOWN EVENTS END ==== */
+
 /* ==== CONTACT INFORMATION ==== */
 .contact {
     margin: 0 1em;
@@ -284,6 +298,9 @@ article.town-news {
 .contact-info {
     margin: 1em 0;
     text-align: center;
+}
+.contact-info h2 {
+    margin-top: 0;
 }
 .contact-info h4 {
     margin: 0;

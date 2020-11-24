@@ -125,6 +125,12 @@
     }
     /* ==== TOWN NEWS END ==== */
 
+    /* ==== TOWN EVENTS ==== */
+    section.events h3 {
+        margin-top: 0;
+    }
+    /* ==== TOWN EVENTS END ==== */
+
     /* ==== CONTACT INFORMATION ==== */
     .contact {
         margin: 2em 1em;
