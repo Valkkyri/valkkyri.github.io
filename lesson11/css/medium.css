@@ -29,7 +29,8 @@
         margin-top: 0;
     }
     section.home_hero {
-        background-size: auto 100%;
+        xbackground-size: auto 100%;
+        padding: 2em 0 4em 0;
     }
     /* ==== MAIN MENU ==== */
     nav {

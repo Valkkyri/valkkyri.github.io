@@ -128,8 +128,8 @@ nav ul {
 
 section.home_hero {
     /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
-    background: linear-gradient(rgba(254, 251, 235, .95), rgba(254, 251, 235, .4)), url(../images/arto-marttinen-145984-unsplash.jpg) center / auto 100% fixed no-repeat;
-    padding: 4em 0 6em 0;
+    background: linear-gradient(rgba(254, 228, 175, .95), rgba(254, 251, 235, .4)), url(../images/arto-marttinen-145984-unsplash.jpg) center / cover fixed no-repeat;
+    padding: 1.5em 1em 2em;
     margin: 0;
     border-bottom: 17px solid #F08700;
     text-align: center;
@@ -329,8 +329,8 @@ ul.social-icons {
 .social-icons li {
     padding-right: .2em;
 }
-.social-icons li a {
-    color: #F08700;
+.social-icons li img {
+    width: 100%;
 }
 /* ==== CONTACT INFORMATION END ==== */
 
