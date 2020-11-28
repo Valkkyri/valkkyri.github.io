@@ -26,9 +26,14 @@
         margin: 0 auto;
     }
     section.home_hero {
-        xbackground-size: 100%;
         background-position: top;
     }
+    /* ==== TOWN EVENTS ==== */
+    section.events {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* ==== TOWN EVENTS END ==== */
     /* ==== WEATHER GALLERY ==== */
     section.weather-gallery {
         grid-template-columns: repeat(3, 1fr);        

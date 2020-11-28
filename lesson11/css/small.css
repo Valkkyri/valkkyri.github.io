@@ -285,12 +285,18 @@ section.events {
     padding: 1em;
     text-align: center;
 }
-section.events ul {
+section.events img {
+    width: 100%;
+}
+section.events section h2 {
+    margin: .5em 0;
+}
+section.events section ul {
     padding: 0;
-    margin: 0;
+    margin: 0 0 1em 0;
     list-style: none;
 }
-section.events ul li {
+section.events section ul li {
     padding: .2em 0;
 }
 /* ==== TOWN EVENTS END ==== */

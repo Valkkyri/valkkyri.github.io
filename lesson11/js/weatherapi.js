@@ -1,27 +1,36 @@
-const fishHavenAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
-const prestonAPIurl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
-const sodaSpringsAPIurl = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+const fishHavenCurrent = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+const fishHavenForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+
+const prestonCurrent = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+const prestonForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+
+const sodaSpringsCurrent = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
+const sodaSpringsForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=91a14b3e44979104098259be0b0f8f5c&units=imperial";
 
 let currentTown = document.querySelector("#page-name").innerHTML;
-let apiURL = "";
+let currentAPI = "";
+let forecastAPI = "";
 
 if (currentTown == "Fish Haven") {
-    apiURL = fishHavenAPIurl;
+    currentAPI = fishHavenCurrent;
+    forecastAPI = fishHavenForecast;
 } else if (currentTown == "Preston Idaho") {
-    apiURL = prestonAPIurl;
+    currentAPI = prestonCurrent;
+    forecastAPI = prestonForecast;
 } else if (currentTown == "Soda Springs") {
-    apiURL = sodaSpringsAPIurl;
+    currentAPI = sodaSpringsCurrent;
+    forecastAPI = sodaSpringsForecast;
 };
 
-fetch(apiURL)
+//Current Weather
+fetch(currentAPI)
     .then((response) => response.json())
     .then((jsObject) => {
-        /* ------ current weather start ------ */
         //console.log(jsObject);
-        let currentConditions = jsObject.list[0].weather[0].main;
-        let temp = jsObject.list[0].main.temp.toFixed(1);
-        let windSpeed = jsObject.list[0].wind.speed.toFixed(0);
-        let humidity = jsObject.list[0].main.humidity;
+        let currentConditions = jsObject.weather[0].main;
+        let temp = jsObject.main.temp.toFixed(1);
+        let windSpeed = jsObject.wind.speed.toFixed(0);
+        let humidity = jsObject.main.humidity;
         let windChill = calculateWindChill(temp, windSpeed);
 
         let summaryUL = document.createElement("ul");
@@ -33,12 +42,14 @@ fetch(apiURL)
         });
         
         document.querySelector("section.stats-right").appendChild(summaryUL);
-        /* ------ current weather end ------ */
+    });
 
-        
-        /* ------ five day forecast start ------ */
+// Five-day Forecast
+fetch(forecastAPI)
+    .then((response) => response.json())
+    .then((jsObject) => {        
         let forcast = jsObject.list.filter(i => i.dt_txt.includes("18:00:00"));
-        console.log(forcast);
+        //console.log(forcast);
         let weekdays = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
         let forcastUL = document.createElement("ul");
 
@@ -52,8 +63,7 @@ fetch(apiURL)
             forcastUL.appendChild(li);
             });
         
-        document.querySelector("section.forcast").appendChild(forcastUL);
-        /* ------ five day forecast end ------ */    
+        document.querySelector("section.forcast").appendChild(forcastUL);    
     });  
 
 // Calculate Wind Chill

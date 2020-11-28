@@ -29,7 +29,6 @@
         margin-top: 0;
     }
     section.home_hero {
-        xbackground-size: auto 100%;
         padding: 2em 0 4em 0;
     }
     /* ==== MAIN MENU ==== */
@@ -127,8 +126,21 @@
     /* ==== TOWN NEWS END ==== */
 
     /* ==== TOWN EVENTS ==== */
-    section.events h3 {
-        margin-top: 0;
+    section.events {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    @media only screen and (min-width: 600px) and (max-width: 852px) {
+        section.events {
+            width: 100%;
+            grid-template-columns: 40% 1fr;        
+        }
     }
     /* ==== TOWN EVENTS END ==== */
 
