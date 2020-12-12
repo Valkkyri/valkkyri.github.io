@@ -1,4 +1,4 @@
-let rentalDataURL = "../data/rental-data.json";
+let rentalDataURL = "https://valkkyri.github.io/scoots/data/rental-data.json";
 
 fetch(rentalDataURL)
     .then((response) => response.json())
