@@ -1,0 +1,199 @@
+/*===== GLOBAL =====*/
+body {
+    font-family: 'Lato', sans-serif;
+    color: #171212;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Audiowide', cursive;
+    color: #004C52;
+}
+a:link {
+    color: #357F1A;
+    text-decoration: none;
+}
+a:hover {
+    color: #006A71;
+}
+a:visited {
+    color: #357F1A;
+}
+a.button {
+    display: inline-block;
+    background-color: #41A71C;
+    padding: .75em 1.75em;
+    color: #ffffff;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+a:hover.button {
+    background-color: #00A1AC;
+}
+* {box-sizing: border-box;}
+/*===== ALERT =====*/
+section.weather-alert {
+    width: 100%;
+    background-color: #EEDFD2;
+    text-align: center;
+}
+section.weather-alert h3 {
+    font-style: italic;
+    padding: 1em 1em 0 1em;
+    margin: 0 0 .5em 0;
+}
+section.weather-alert a {
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 1em 1em 1em;
+}
+section.weather-alert article {
+    display: none;
+    padding: 0 1em 1em 1em;
+}
+section.weather-alert article.show-hide {
+    display: block;
+}
+section.weather-alert p:first-of-type {
+    margin-top: 0;
+}
+section.weather-alert p:last-of-type {
+    text-align: left;
+}
+section.weather-alert a.hide {
+    display: none;
+}
+
+
+/*===== HEAD =====*/
+h2.home.page-title {
+    display: none;
+}
+header {
+    align-items: center;
+    /* background-color: #F9F4F0; */
+}
+/*===== LOGO AND TAGLINE =====*/
+header section.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em 1em 1.5em 1em;
+}
+header section.logo img {
+    max-width: 100%;
+    width: 35%;
+    margin-left: 3em;
+}
+header section.logo section {
+    width: 65%;
+}
+header section.logo section h1 {
+    margin: 1em 0 .25em -.5em;
+}
+header section.logo section p {
+    text-align: right;
+    margin: 0 1em 0 0;
+    font-size: 1.4em;
+}
+/*===== MENU =====*/
+nav {
+    width: 100%;
+    background-color: #00A1AC;
+    color: #ffffff;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 600;
+}
+.menu li:first-child {
+    display: block;
+    width: 100%;
+}
+.menu li {
+    display: none;
+}
+.menu li a {
+    display: block;
+    padding: .75em;
+    color: #ffffff;
+    letter-spacing: .11em;
+}
+.menu li:last-of-type a {
+    padding-bottom: 1em;
+}
+.menu li a:hover {
+    color: #ffffff;
+}
+.menu a.active {
+    background-color: #C8976C;
+    color: #ffffff;
+}
+.mobile-view li {
+    display: block;
+    background-color: #00A1AC;
+}
+.menu li a.highlight {
+    background-color: #41A71C;
+    color: #ffffff;
+}
+.menu li a:hover.highlight {
+    background-color: #00A1AC;
+}
+/*===== HERO =====*/
+section.home-hero {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(242, 234, 227, 0)), url(../images/home-hero.jpg) top center/cover no-repeat;
+    padding: 1em 1.5em 2em 1.5em;
+    text-align: center;
+}
+section.home-hero h2 {
+    color: #1A110F;
+    margin: 0 0 1.5em 0;
+    letter-spacing: .08em;
+    line-height: 1.5em;
+}
+section.home-hero a.button {
+    box-shadow: 1px 1px 8px 2px rgba(26, 17, 15, .8);
+}
+/*===== CURRENT CONDITIONS ROW =====*/
+section.current-conditions {
+    background: linear-gradient(rgba(230, 249, 247, .9), rgba(230, 249, 247, .95)), url(../images/current-conditions-bkg.jpg) center center/cover no-repeat;
+    color: #1A110F;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 1px 1px 8px 2px rgba(26, 17, 15, .8);
+    border: 5px solid #004C52;
+}
+section.current-conditions h3 {
+    color: #1A110F;
+    margin: 0;
+    padding-bottom: .25em;
+    border-bottom: 1px solid #1A110F;
+}
+/* section.current-conditions img {
+    margin: -1em;
+    background-color: #ffffff;
+} */
+section.current-conditions dl {
+    margin: .5em 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+section.current-conditions dt {
+    font-weight: 600;
+    flex-basis: 50%;
+    text-align: right;
+    padding: .25em 0;
+}
+section.current-conditions dd {
+    flex-basis: 50%;
+    flex-grow: 1;
+    text-align: left;
+    padding: .25em;
+    margin: 0;
+}
+/*===== HOME BODY CONTENT =====*/
+main {
+    padding: 1em;
+}

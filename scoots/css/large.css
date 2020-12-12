@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1024px) {
+    /*===== HEAD =====*/
+    header {
+        grid-template-columns: 40% 60%;
+    }
+    /*===== LOGO AND TAGLINE =====*/
+    header section.logo {
+        width: 70%;
+        justify-self: end;
+    }
+    header section.logo h1 {
+        font-size: 2em;
+    }
+    /*===== MENU =====*/
+    nav {
+        font-size: 1em;
+        justify-self: center;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .menu li:last-of-type a {
+        padding: .75em 1em .75em;
+    }
+    .menu li a {
+        padding: .75em;
+    }
+    /*===== HERO =====*/
+    section.home-hero {
+        grid-row: 2 / 2;
+        grid-column: 1 / -1;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(242, 234, 227, 0)), url(../images/home-hero.jpg) center center/cover no-repeat;
+        padding: 1em 1.5em 2em 1.5em;
+        text-align: center;
+        align-self: flex-end;
+    }
+    section.home-hero h2 {
+        color: #1A110F;
+        margin: 0 0 1.5em 0;
+        letter-spacing: .08em;
+        line-height: 1.5em;
+    }
+
+
+
+
+
+
+
+}
