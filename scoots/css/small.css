@@ -1,32 +1,41 @@
 /*===== GLOBAL =====*/
+:root {
+    --bodyTextColor: #171212;
+    --white: #ffffff;
+    --mainBlue: #004C52;
+    --brightBlue: #00A1AC;
+    --green: #357F1A;
+    --brightGreen: #41A71C;
+    --darkBrown: #1A110F;
+}
 body {
     font-family: 'Lato', sans-serif;
-    color: #171212;
+    color: var(--bodyTextColor);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Audiowide', cursive;
-    color: #004C52;
+    color: var(--mainBlue);
 }
 a:link {
-    color: #357F1A;
+    color: var(--green);
     text-decoration: none;
 }
 a:hover {
     color: #006A71;
 }
 a:visited {
-    color: #357F1A;
+    color: var(--green);
 }
 a.button {
     display: inline-block;
-    background-color: #41A71C;
+    background-color: var(--brightGreen);
     padding: .75em 1.75em;
-    color: #ffffff;
+    color: var(--white);
     font-size: 1.1em;
     border-radius: 4px;
 }
 a:hover.button {
-    background-color: #00A1AC;
+    background-color: var(--brightBlue);
 }
 * {box-sizing: border-box;}
 /*===== ALERT =====*/
@@ -97,8 +106,8 @@ header section.logo section p {
 /*===== MENU =====*/
 nav {
     width: 100%;
-    background-color: #00A1AC;
-    color: #ffffff;
+    background-color: var(--brightBlue);
+    color: var(--white);
 }
 nav ul {
     list-style: none;
@@ -117,29 +126,29 @@ nav ul {
 .menu li a {
     display: block;
     padding: .75em;
-    color: #ffffff;
+    color: var(--white);
     letter-spacing: .11em;
 }
 .menu li:last-of-type a {
     padding-bottom: 1em;
 }
 .menu li a:hover {
-    color: #ffffff;
+    color: var(--white);
 }
 .menu a.active {
     background-color: #C8976C;
-    color: #ffffff;
+    color: var(--white);
 }
 .mobile-view li {
     display: block;
-    background-color: #00A1AC;
+    background-color: var(--brightBlue);
 }
 .menu li a.highlight {
-    background-color: #41A71C;
-    color: #ffffff;
+    background-color: var(--brightGreen);
+    color: var(--white);
 }
 .menu li a:hover.highlight {
-    background-color: #00A1AC;
+    background-color: var(--brightBlue);
 }
 /*===== HERO =====*/
 section.home-hero {
@@ -148,7 +157,7 @@ section.home-hero {
     text-align: center;
 }
 section.home-hero h2 {
-    color: #1A110F;
+    color: var(--darkBrown);
     margin: 0 0 1.5em 0;
     letter-spacing: .08em;
     line-height: 1.5em;
@@ -159,21 +168,21 @@ section.home-hero a.button {
 /*===== CURRENT CONDITIONS ROW =====*/
 section.current-conditions {
     background: linear-gradient(rgba(230, 249, 247, .9), rgba(230, 249, 247, .95)), url(../images/current-conditions-bkg.jpg) center center/cover no-repeat;
-    color: #1A110F;
+    color: var(--darkBrown);
     padding: 1em;
     text-align: center;
     box-shadow: 1px 1px 8px 2px rgba(26, 17, 15, .8);
-    border: 5px solid #004C52;
+    border: 5px solid var(--mainBlue);
 }
 section.current-conditions h3 {
-    color: #1A110F;
+    color: var(--darkBrown);
     margin: 0;
     padding-bottom: .25em;
-    border-bottom: 1px solid #1A110F;
+    border-bottom: 1px solid var(--darkBrown);
 }
 /* section.current-conditions img {
     margin: -1em;
-    background-color: #ffffff;
+    background-color: var(--white);
 } */
 section.current-conditions dl {
     margin: .5em 0 0 0;

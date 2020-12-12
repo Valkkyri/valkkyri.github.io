@@ -29,7 +29,7 @@
     nav {
         grid-column: 2;
         background-color: rgba(255, 255, 255, 0);
-        color: #00A1AC;
+        color: var(--brightBlue);
         font-size: .9em;
         justify-self: end;
         margin-right: 1em;
@@ -49,7 +49,7 @@
         white-space: nowrap;
     }
     .menu li a {
-        color: #004C52;
+        color: var(--mainBlue);
         padding: .75em .6em .75em;
     }
     .menu li a:hover {
@@ -60,7 +60,7 @@
         color: #41A71C;
     }
     .menu li a.highlight {
-        color: #ffffff;
+        color: var(--white);
     }
     /*===== HERO =====*/
     section.home-hero {
@@ -72,7 +72,7 @@
         align-self: flex-end;
     }
     section.home-hero h2 {
-        color: #1A110F;
+        color: var(--darkBrown);
         margin: 0 0 1.5em 0;
         letter-spacing: .08em;
         line-height: 1.5em;
