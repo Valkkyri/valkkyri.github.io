@@ -3,8 +3,9 @@ const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.501&lon=-
 fetch(apiURL)
     .then((response) => response.json())
     .then((currentWeather) => {
-        //console.log(currentWeather);
-        let conditions = currentWeather.current.weather[0].main;
+        // console.log(currentWeather);
+        // let conditions = currentWeather.current.weather[0].main;
+        let conditionsDescription = currentWeather.current.weather[0].description;
         // let icon = currentWeather.current.weather[0].icon;
         // let iconDescription = currentWeather.current.weather[0].description;
         let temperature = currentWeather.current.temp.toFixed(0);
@@ -13,7 +14,7 @@ fetch(apiURL)
         let windSpeed = currentWeather.current.wind_speed.toFixed(0);
 
         let conditionName = ["Currently:", "Temperature:", "Humidity:", "Wind Speed:", "UV Index:"];
-        let conditionDetails = [conditions, `${temperature}&deg;F`, `${humidity}%`, `${windSpeed} mph`, uvIndex];
+        let conditionDetails = [conditionsDescription, `${temperature}&deg;F`, `${humidity}%`, `${windSpeed} mph`, uvIndex];
         let dl = document.createElement("dl");
 
         // let iconImage = document.createElement("img");

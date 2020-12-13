@@ -70,8 +70,6 @@ section.weather-alert p:last-of-type {
 section.weather-alert a.hide {
     display: none;
 }
-
-
 /*===== HEAD =====*/
 h2.home.page-title {
     display: none;
@@ -205,4 +203,30 @@ section.current-conditions dd {
 /*===== HOME BODY CONTENT =====*/
 main {
     padding: 1em;
+}
+main h2 {
+    text-align: center;
+    padding-bottom: .25em;
+    border-bottom: 1px solid var(--mainBlue);
+}
+/*===== RENTAL SUMMARY =====*/
+section.rentals h2 {
+    margin-bottom: -.5em;
+}
+section.rentals section h3 {
+    margin-bottom: 0;
+    margin-top: 1.25em;
+}
+section.rentals section ul {
+    padding-left: 1.5em;
+    margin-top: .5em;
+}
+section.rentals a.button {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+}
+/*===== CONTACT HOME =====*/
+.contact-info h4 {
+    margin-bottom: -.5em;
 }
