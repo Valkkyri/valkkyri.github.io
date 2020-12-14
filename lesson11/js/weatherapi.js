@@ -64,7 +64,7 @@ fetch(forecastAPI)
             });
         
         document.querySelector("section.forcast").appendChild(forcastUL);    
-    });  
+    });
 
 // Calculate Wind Chill
 function calculateWindChill(temp, windSpeed) {

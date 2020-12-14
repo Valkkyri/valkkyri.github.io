@@ -1,10 +1,10 @@
 let rentalDataURL = "https://valkkyri.github.io/scoots/data/rental-data.json";
 
-let i = 0;
+// let i = 0;
 fetch(rentalDataURL)
     .then((response) => response.json())
     .then((rentalData) => {
-        console.log(rentalData);
+        // console.log(rentalData);
         let vehicleType = ["Honda Motor Scooters", "ATV Side-by-Side", "Jeep Rentals"];
         
         // SCOOTERS

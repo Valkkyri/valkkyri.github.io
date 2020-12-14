@@ -1,9 +1,11 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.501&lon=-86.94598&appid=91a14b3e44979104098259be0b0f8f5c&exclude=minutely,hourly&units=imperial";
+// const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.501&lon=-86.94598&appid=91a14b3e44979104098259be0b0f8f5c&exclude=minutely,hourly&units=imperial";
+const apiURL = "https://valkkyri.github.io/scoots/data/current-conditions.json";
 
+let i = 0;
 fetch(apiURL)
     .then((response) => response.json())
     .then((currentWeather) => {
-        // console.log(currentWeather);
+        console.log(currentWeather);
         // let conditions = currentWeather.current.weather[0].main;
         let conditionsDescription = currentWeather.current.weather[0].description;
         // let icon = currentWeather.current.weather[0].icon;
@@ -36,4 +38,55 @@ fetch(apiURL)
 
         // document.querySelector(".current-conditions").appendChild(iconImage);
         document.querySelector(".current-conditions").appendChild(dl);
-    });
+
+        // 3-DAY FORCAST
+        let weekdays = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+
+        let forcastUL = document.createElement("ul");
+        // let dailyForcast = currentWeather.daily;
+
+        
+        let today = new Date();
+        let weekdayNum = today.getDay();
+        // while (weekdayNum == currentWeather.daily[j]) {
+        //     j++
+
+        // };
+        
+
+
+
+
+        for (let j = 0; j < currentWeather.daily.length; j++) {
+            let highTemp = currentWeather.daily[j].temp.max.toFixed(0);
+            
+            
+            // dailyForcast[j];
+            console.log(highTemp);
+        }
+        
+        
+        
+        // dailyForcast.forEach(day => {
+        //     // console.log(day);
+        //     let li = document.createElement("li");
+        //     // let highTemp = day.temp.max.toFixed(0);
+            
+        //     let today = new Date();
+        //     let dayName = weekdays[today.getDay()];
+        //     let currentDate = dayName + ', ' + today.getDate();
+            
+        //     let weekdayNum = today.getDay();
+        //     console.log(weekdayNum);
+        //     let icon = day.weather[0].icon;
+        //     let iconURL = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+        //     let iconDescription = day.weather[0].description;
+        //     let forcastContent = `<strong>${currentDate}</strong> <img src="${iconURL}" alt="${iconDescription}"> ${highTemp}&deg;F`;            
+        //     li.innerHTML = forcastContent;            
+        //     forcastUL.appendChild(li);
+        //     i++;
+        // }, i);
+
+        document.querySelector(".forcast").appendChild(forcastUL);
+        i++;
+    }, i);
