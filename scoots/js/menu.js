@@ -2,7 +2,8 @@ window.onload = generateMenu();
 window.onload = mobileMenu();
 
 function generateMenu() {
-    let pageTitle = document.querySelector(".page-title").innerHTML;
+    let pageTitle = document.querySelector("h2.page-title").innerHTML;
+    // console.log(pageTitle);
     let ul = document.createElement("ul");
     ul.setAttribute("class", "menu");
     let menuLinkName = ["&#9776; Menu", "Home", "Rentals", "Reservations", "Tours", "Contact", "Book Now!"];
@@ -11,7 +12,7 @@ function generateMenu() {
         let li = document.createElement("li");
         let aLink = document.createElement("a");
         aLink.setAttribute("href", menuLink[i]);
-        if (menuLinkName[i] == pageTitle[i] || menuLinkName[i] == "Home") {
+        if (menuLinkName[i] == pageTitle) {
             aLink.setAttribute("class", "active");
         } else if (menuLinkName[i] == "&#9776; Menu") {
             aLink.setAttribute("class", "mobile-nav");

@@ -30,12 +30,13 @@ a:visited {
     color: var(--green);
 }
 a.button {
-    display: inline-block;
+    display: block;
     background-color: var(--brightGreen);
     padding: .75em 1.75em;
     color: var(--white);
     font-size: 1.1em;
     border-radius: 4px;
+    text-align: center;
 }
 a:hover.button {
     background-color: var(--brightBlue);
@@ -175,6 +176,8 @@ section.home-hero h2 {
 }
 section.home-hero a.button {
     box-shadow: 1px 1px 8px 2px rgba(26, 17, 15, .8);
+    width: 200px;
+    margin: 0 auto;
 }
 /*===== SUB HERO =====*/
 section.sub-hero {
@@ -232,6 +235,9 @@ main h2 {
 main > section {
     padding: 1em;
 }
+main.subpage {
+    display: block;
+}
 /*===== RENTAL SUMMARY =====*/
 section.rentals h2 {
     margin-bottom: -.5em;
@@ -243,11 +249,6 @@ section.rentals section h3 {
 section.rentals section ul {
     padding-left: 1.5em;
     margin-top: .5em;
-}
-section.rentals a.button {
-    display: block;
-    text-align: center;
-    margin-bottom: 2em;
 }
 section.rentals img.rental-img {
     display: none;
@@ -292,6 +293,115 @@ section.forcast {
     display: block;
     margin: 0 auto;
 }
+
+/*===== RENTAL PAGE =====*/
+section.rentals-all {
+    text-align: center;
+}
+section.rentals-all img {
+    width: 90%;
+}
+section.rentals-all h3:first-of-type {
+    margin-top: 1em;
+}
+section.rentals-all h3 {
+    margin-top: 3em;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 1em;
+}
+table, th, td {
+    border: 1px solid var(--mainBlue);
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0;
+}
+table thead {
+    background-color: var(--mainBlue);
+}
+table thead td h3 {
+    margin: 1%;
+    color: var(--white);
+    font-weight: 500;
+}
+table tbody th {
+    font-weight: bold;
+}
+
+/* ==== RESERVATION FORM ==== */
+form {
+    width: 80%;
+    margin: 1em auto 3em auto;
+}
+form h2 {
+    text-align: center !important;
+}
+form input:invalid:required {
+    border-bottom: 4px solid red;
+}
+form input:valid:required {
+    border-bottom: 4px solid green;
+}
+form input, form select, form textarea {
+    margin: .5em 0;
+    border: 1px solid #2b2f32;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+    padding: .2em .5em;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+form span {
+    margin-top: 4%;
+    font-weight: 700;
+}
+span.req {
+    color: red;
+    margin: 0;
+}
+form p {
+    text-align: center;
+    font-style: italic;
+    margin-top: .25em;
+}
+label#moreinfo-container {
+    align-items: flex-start;
+}
+label#moreinfo-container textarea {
+    width: 100%;
+    height: 4em;
+}
+form button {
+    background-color: var(--brightGreen);
+    color: #ffffff;
+    padding: .75em 2em;
+    margin: 1em auto 0 auto;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+form button:hover {
+    cursor: pointer;
+    background-color: var(--brightBlue);
+}
+
+/*===== CONTACT PAGE =====*/
+section.iframe-map iframe {
+    width: 100%;
+    height: auto;
+}
+hr {
+    border-top: 1px solid var(--mainBlue);
+}
+
 /*===== FOOTER =====*/
 footer {
     background-color: var(--darkBrown);
@@ -309,4 +419,11 @@ ul.social {
 }
 .social li img {
     width: 75%;
+}
+footer a:link {
+    color: var(--white);
+    text-decoration: underline;
+}
+footer a:hover, footer a:visited {
+    color: var(--white);
 }

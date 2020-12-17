@@ -55,13 +55,5 @@
         margin-bottom: 2em;
     }
 
-    /*===== RENTAL PAGE =====*/
-    section.rental-overview {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    section.rental-overview img {
-        width: 90%;
-    }
+    
 }

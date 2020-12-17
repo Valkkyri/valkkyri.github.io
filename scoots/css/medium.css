@@ -161,7 +161,75 @@
     .forcast ul li {
         padding-bottom: .75em;
     }
-    /*===== FOOTER =====*/
+    
+
+    /*===== RENTAL PAGE =====*/
+    section.rentals-all {
+        text-align: left;
+    }
+    section.rentals-all section section {
+        margin: 1em;
+    }
+    section.scooter-overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    section.rentals-all img {
+        width: 80%;
+    }
+    section.atv-overview {
+        width: 40%;
+    }
+    section.jeep-overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    table {
+        max-width: 100%;
+    }
+    th, td {
+        padding: 1%;
+    }
+    /* ==== RESERVATION FORM ==== */
+    label {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    form input, form select {
+        width: 65%;
+    }
+    form span {
+        width: 35%;
+        text-align: right;
+        margin: 0 4% 0 0;
+    }
+    label#moreinfo-container span {
+        margin-top: .25em
+    }
+    label#moreinfo-container textarea {
+        width: 65%;
+    }
+
+    /*===== CONTACT PAGE =====*/
+    main.subpage section.contact-info > section {
+        display: flex;
+        flex-direction: row;
+    }
+    section.contact-details {
+        flex-basis: 60%;
+    }
+    section.iframe-map {
+        margin: 1em;
+        flex-basis: 40%;
+    }
+    section.iframe-map iframe {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 750px) {

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots - Cozumel, Mexico | Reservations</title>
+    <meta name="description" content="Explore Cozumel like no one else, rent Scooters, Jeeps, and ATVs!">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato&display=swap" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="home page-title">Reservations</h2>
+    <section class="weather-alert"></section>
+    <header>
+        <section class="logo-menu">
+            <section class="logo">
+                <img src="images/logo.png" alt="~Scoots, Cozumel">
+                <section>
+                    <h1>~Scoots</h1>
+                    <p>Let's Ride</p>
+                </section>
+            </section>
+            <nav class="global-menu"></nav>
+        </section>
+        <section class="sub-hero">
+            <h2>Reservations</h2>
+        </section>
+    </header>
+    <main class="subpage">
+        <form method="GET" action="thanks.html">
+            <h2>Your Information</h2>
+            <label for="name"><span>Full Name<span class="req">*</span></span> <input type="text" id="name" name="name" placeholder="Full Name" pattern="[A-Z a-z]+" minlength="5" required></label>
+            <label for="email"><span>Email Address</span> <input type="email" id="email" name="email" placeholder="ex: someone@website.com"></label>
+            <label for="phone"><span>Phone Number<span class="req">*</span></span> <input type="tel" id="phone" name="phone" placeholder="Phone Number" required></label>
+            <label for="state-or-country"><span>State or Country<span class="req">*</span></span> <input type="text" id="state-or-country" name="state-or-country" placeholder="State or Country" required></label>
+            <label for="cruise-line"><span>Cruise line (if applicable)</span> <input type="text" id="cruise-line" name="cruise-line" placeholder="Cruise line (if applicable)"></label>
+            <p><span class="req">*</span> required</p>
+
+            <h2>Rental Information</h2>
+            <label for="reservationdate"><span>Reservation Date</span> <input type="date" id="reservationdate" name="reservationdate"></label>
+            <label for="rental-length"><span>Rental Length</span>
+                <select id="rental-length" name="rental-length">
+                    <option value="" disabled selected>--- Rental Length ---</option>
+                    <option value="Full Day">Full Day</option>
+                    <option value="Half Day">Half Day</option>
+                </select>
+            </label>
+            <label for="rental-type"><span>Rental Type</span>
+                <select id="rental-type" name="rental-type">
+                    <option value="" disabled selected>--- Rental Type ---</option>
+                    <option value="Scooter">Scooter</option>
+                    <option value="ATV">ATV</option>
+                    <option value="Jeep">Jeep</option>
+                </select>
+            </label>
+
+            <h2>Special Accommodations or Comments</h2>
+            <label for="moreinfo" id="moreinfo-container"><span>More information</span>
+                <textarea id="moreinfo" name="moreinfo"></textarea>
+            </label>
+            <button name="button" type="submit">Sumbit Reservation Request</button>
+        </form>
+    </main>
+    <footer>
+        <p>~Scoots, Cozumel &copy; <span class="this-year"></span></p>
+        <p class="last-modified"></p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="images/icon-facebook-wt.png" alt="Visit us on Facebook"></a></li>
+            <li><a href="http://instagram.com/" target="_blank"><img src="images/icon-instagram-wt.png" alt="Check us out on Instagram"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="images/icon-youtube-wt.png" alt="See our YouTube channel"></a></li>
+        </ul>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/vehicle-data.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>
