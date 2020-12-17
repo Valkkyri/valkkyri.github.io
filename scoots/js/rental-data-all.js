@@ -5,7 +5,7 @@ fetch(rentalDataURL)
     .then((response) => response.json())
     .then((rentalData) => {
         console.log(rentalData);
-        let vehicleType = ["Honda Motor Scooters", "ATV Side-by-Side", "Jeep Rentals"];        
+        let vehicleType = ["Honda Motor Scooters", "ATV Side-by-Side", "Jeep Rentals"];
         
         // SCOOTERS
         let scooterSection = document.createElement("section");
@@ -13,20 +13,58 @@ fetch(rentalDataURL)
         let scooterTitle = document.createElement("h3");
         scooterTitle.innerHTML = vehicleType[0];
         let scooters = rentalData.rentals[0].scooter;
-        let scooterUL = document.createElement("ul");
+
         scooters.forEach((i) => {
             let scootName = i.name;
             let scootPeeps = i.maxPersons;
             let scootImage = i.image;
             
-            let scootInfo = document.createElement("li");
-            scootInfo.innerHTML = `<img src="https://valkkyri.github.io/scoots/images/${scootImage}" alt="${scootName}"> ${scootName} -- ${scootPeeps} person`;
+            let scootPic = document.createElement("img");
+            let scootInfo = document.createElement("p");
+            scootInfo.innerHTML = `${scootName} -- ${scootPeeps} person`;
+            
             scooterUL.appendChild(scootInfo);
         });
         scooterSection.appendChild(scooterTitle);
         scooterSection.appendChild(scooterUL);
 
         document.querySelector(".rental-overview").appendChild(scooterSection);
+
+
+
+
+
+        // SCOOTERS
+        // let scooterSection = document.createElement("section");
+        // scooterSection.setAttribute("class", "scooter-summary");
+        // let scooterTitle = document.createElement("h3");
+        // scooterTitle.innerHTML = vehicleType[0];
+        // let scooters = rentalData.rentals[0].scooter;
+        // let scooterUL = document.createElement("ul");
+        // scooters.forEach((i) => {
+        //     let scootName = i.name;
+        //     let scootPeeps = i.maxPersons;
+        //     let scootImage = i.image;
+            
+        //     let scootInfo = document.createElement("li");
+        //     scootInfo.innerHTML = `<img src="https://valkkyri.github.io/scoots/images/${scootImage}" alt="${scootName}"> ${scootName} -- ${scootPeeps} person`;
+        //     scooterUL.appendChild(scootInfo);
+        // });
+        // scooterSection.appendChild(scooterTitle);
+        // scooterSection.appendChild(scooterUL);
+
+        // document.querySelector(".rental-overview").appendChild(scooterSection);
+
+
+
+
+
+
+
+
+
+
+
 
         // ATV
         let atvSection = document.createElement("section");

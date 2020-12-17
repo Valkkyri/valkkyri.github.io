@@ -36,6 +36,9 @@
         width: 1024px;
         margin: 0 auto;
     }
+    main.subpage {
+        display: block;
+    }
     /*===== RENTAL SUMMARY =====*/
     section.rentals h2 {
         grid-area: 1 / 1 / 1 / 3;
@@ -50,5 +53,15 @@
     /* ==== THREE DAY FORCAST ==== */
     section.forcast {
         margin-bottom: 2em;
+    }
+
+    /*===== RENTAL PAGE =====*/
+    section.rental-overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    section.rental-overview img {
+        width: 90%;
     }
 }
