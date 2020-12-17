@@ -1,26 +1,26 @@
 @media only screen and (min-width: 600px) {
     /*===== HEAD =====*/
-    header {
+    header section.logo-menu {
         display: grid;
         grid-template-columns: 32% 68%;
         align-items: center;
     }
     /*===== LOGO AND TAGLINE =====*/
-    header section.logo {
+    header section.logo-menu section.logo {
         grid-column: 1/1;
         display: flex;
     }
-    header section.logo img {
+    header section.logo-menu section.logo img {
         margin-left: 1em;
     }
-    header section.logo h1 {
+    header section.logo-menu section.logo h1 {
         font-size: 1.7em;
     }
-    header section.logo section {
+    header section.logo-menu section.logo section {
         width: 100%;
         white-space: nowrap;
     }
-    header section.logo section p {
+    header section.logo-menu section.logo section p {
         text-align: right;
         margin-right: 0;
         font-size: 1.2em;
@@ -53,11 +53,11 @@
         padding: .75em .6em .75em;
     }
     .menu li a:hover {
-        color: #41A71C;
+        color: var(--brightGreen);
     }
     .menu a.active {
         background-color:rgba(255, 255, 255, 0);
-        color: #41A71C;
+        color: var(--brightGreen);
     }
     .menu li a.highlight {
         color: var(--white);
@@ -67,6 +67,8 @@
         grid-row: 2 / 2;
         grid-column: 1 / -1;
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(242, 234, 227, 0)), url(../images/home-hero.jpg) top center/cover no-repeat;
+        border-top: 7px solid var(--darkBrown);
+        border-bottom: 10px solid var(--darkBrown);
         padding: 1em 1.5em 2em 1.5em;
         text-align: center;
         align-self: flex-end;
@@ -77,11 +79,110 @@
         letter-spacing: .08em;
         line-height: 1.5em;
     }
+    /*===== HOME BODY CONTENT =====*/
+    main h2 {
+        text-align: left;
+        padding-bottom: .25em;
+        border-bottom: 1px solid var(--mainBlue);
+    }
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 38% auto auto auto;        
+    }
+    /*===== RENTAL SUMMARY =====*/
+    section.rentals {
+        grid-area: 1 / 1 / 2 / -1;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+    }
+    section.rentals h2 {
+        grid-area: 1 / 1 / 1 / 3;
+    }    
+    section.rentals section.rental-summary {
+        margin-left: 2em;
+        grid-area: 2 / 2 / 3 / 2;
+    }
+    /* section.rentals section.scooter-summary h3 {
+        margin-top: 0;
+    } */
+    section.rentals img.rental-img {
+        display: block;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    img.rental-img {
+        width: 100%;
+        border: 8px solid var(--white);
+        box-shadow: 1px 1px 8px 2px rgba(26, 17, 15, .3);
+    }
+    section.rentals a.button {
+        grid-area: 3 / 1 / 3 / 3;
+        width: 50%;
+        margin: 0 auto 1em;
+    }
+    /*===== CURRENT CONDITIONS =====*/
+    section.current-conditions {
+        margin: 1em;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    /*===== CONTACT INFO =====*/
+    section.contact-info h2 {
+        margin-top: 0;
+    }
+    section.contact-info {
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    img.scooter-med {
+        display: block;
+        grid-area: 3 / 2 / 4 / 3;
+        width: 90%;
+        margin: 1em auto;
+    }
+    /* ==== THREE DAY FORCAST ==== */
+    section.forcast {
+        grid-area: 4 / 1 / -1 / -1;
+        padding-bottom: 1em;
+    }
+    section.forcast h2 {
+        text-align: center;
+    }
+    .forcast ul {
+        width: 100%;
+        flex-direction: row;
+    }
+    .forcast ul li:nth-child(2) {
+        border-left: none;
+        border-right: none;
+    }
+    .forcast ul li strong {
+        padding: .3em 4em;
+    }
+    .forcast ul li {
+        padding-bottom: .75em;
+    }
+    /*===== FOOTER =====*/
+}
 
-
-
-
-
-
-
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+    /*===== HEAD =====*/
+    header section.logo-menu {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 1fr auto;
+        align-items: center;
+    }
+    /*===== MENU =====*/
+    nav {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        font-size: 1em;
+        margin: 0 auto 1em;
+    }
+    nav ul {        
+        justify-content: center;
+    }
+    main {
+        grid-template-columns: 56% 44%;
+    }
 }

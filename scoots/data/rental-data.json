@@ -5,6 +5,7 @@
                 {
                     "name": "~Honda Metro Scooter",
                     "model": "Metropolitan (49cc)",
+                    "image": "2020-metropolitan-scooter.jpg",
                     "maxPersons": "1",
                     "reservation": [
                         {
@@ -22,6 +23,7 @@
                 {
                     "name": "~Honda Dio Scooter",
                     "model": "Dio (110cc)",
+                    "image": "honda-dio-scooter.jpg",
                     "maxPersons": "2",
                     "reservation": [
                         {
@@ -39,6 +41,7 @@
                 {
                     "name": "~Honda PCX150 Scooter",
                     "model": "PCX150 (149cc)",
+                    "image": "2019-pcx150-scooter.jpg",
                     "maxPersons": "2",
                     "reservation": [
                         {
@@ -58,6 +61,7 @@
                 {
                     "name": "Honda Pioneer ATV",
                     "model": "Pioneer 1000",
+                    "image": "2020-honda-pioneer-atv.jpg",
                     "maxPersons": "4",
                     "reservation": [
                         {
@@ -77,6 +81,7 @@
                 {
                     "name": "4-door Jeep Wrangler - manual with A/C",
                     "model": "Wrangler - 4 door",
+                    "image": "2020-Jeep-Wrangler-4-Door.jpg",
                     "maxPersons": "5",
                     "reservation": [
                         {
@@ -94,6 +99,7 @@
                 {
                     "name": "2-door Jeep Wrangler - open air",
                     "model": "Wrangler - 2 door",
+                    "image": "2020-Jeep-Wrangler-2-Door.jpg",
                     "maxPersons": "4",
                     "reservation": [
                         {

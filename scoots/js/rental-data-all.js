@@ -4,8 +4,8 @@ let i = 0;
 fetch(rentalDataURL)
     .then((response) => response.json())
     .then((rentalData) => {
-        // console.log(rentalData);
-        let vehicleType = ["Honda Motor Scooters", "ATV Side-by-Side", "Jeep Rentals"];
+        console.log(rentalData);
+        let vehicleType = ["Honda Motor Scooters", "ATV Side-by-Side", "Jeep Rentals"];        
         
         // SCOOTERS
         let scooterSection = document.createElement("section");
@@ -17,13 +17,16 @@ fetch(rentalDataURL)
         scooters.forEach((i) => {
             let scootName = i.name;
             let scootPeeps = i.maxPersons;
+            let scootImage = i.image;
             
             let scootInfo = document.createElement("li");
-            scootInfo.innerHTML = `${scootName} -- ${scootPeeps} person`;
+            scootInfo.innerHTML = `<img src="https://valkkyri.github.io/scoots/images/${scootImage}" alt="${scootName}"> ${scootName} -- ${scootPeeps} person`;
             scooterUL.appendChild(scootInfo);
         });
         scooterSection.appendChild(scooterTitle);
         scooterSection.appendChild(scooterUL);
+
+        document.querySelector(".rental-overview").appendChild(scooterSection);
 
         // ATV
         let atvSection = document.createElement("section");
@@ -43,6 +46,9 @@ fetch(rentalDataURL)
         atvSection.appendChild(atvTitle);
         atvSection.appendChild(atvUL);
 
+        document.querySelector(".rental-overview").appendChild(atvSection);
+
+
         // JEEP
         let jeepSection = document.createElement("section");
         jeepSection.setAttribute("class", "jeep-summary");
@@ -60,11 +66,8 @@ fetch(rentalDataURL)
         });
         jeepSection.appendChild(jeepTitle);
         jeepSection.appendChild(jeepUL);
-
-
-        document.querySelector(".rental-summary").appendChild(scooterSection);
-        document.querySelector(".rental-summary").appendChild(atvSection);
-        document.querySelector(".rental-summary").appendChild(jeepSection);
+        
+        document.querySelector(".rental-overview").appendChild(jeepSection);
 
         i++;
     }, i);

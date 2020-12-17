@@ -7,6 +7,9 @@
     --green: #357F1A;
     --brightGreen: #41A71C;
     --darkBrown: #1A110F;
+    --altBkgColor: #EEDFD2;
+    --activeMenu: #C8976C;
+    --linkHover: #006A71;
 }
 body {
     font-family: 'Lato', sans-serif;
@@ -21,7 +24,7 @@ a:link {
     text-decoration: none;
 }
 a:hover {
-    color: #006A71;
+    color: var(--linkHover);
 }
 a:visited {
     color: var(--green);
@@ -41,13 +44,21 @@ a:hover.button {
 /*===== ALERT =====*/
 section.weather-alert {
     width: 100%;
-    background-color: #EEDFD2;
+    background-color: var(--altBkgColor);
     text-align: center;
+}
+section.weather-alert.hide {
+    display: none;
 }
 section.weather-alert h3 {
     font-style: italic;
-    padding: 1em 1em 0 1em;
+    padding: .5em 1em 0 1em;
     margin: 0 0 .5em 0;
+}
+section.weather-alert a.close-button {
+    padding: 1em 1em 0 1em;
+    font-weight: 400;
+    font-style: italic;
 }
 section.weather-alert a {
     display: inline-block;
@@ -76,7 +87,7 @@ h2.home.page-title {
 }
 header {
     align-items: center;
-    /* background-color: #F9F4F0; */
+    background-color: var(--altBkgColor);
 }
 /*===== LOGO AND TAGLINE =====*/
 header section.logo {
@@ -134,7 +145,7 @@ nav ul {
     color: var(--white);
 }
 .menu a.active {
-    background-color: #C8976C;
+    background-color: var(--activeMenu);
     color: var(--white);
 }
 .mobile-view li {
@@ -150,9 +161,11 @@ nav ul {
 }
 /*===== HERO =====*/
 section.home-hero {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(242, 234, 227, 0)), url(../images/home-hero.jpg) top center/cover no-repeat;
+    background: url(../images/home-hero.jpg) top center/cover no-repeat;
     padding: 1em 1.5em 2em 1.5em;
     text-align: center;
+    border-top: 4px solid var(--darkBrown);
+    border-bottom: 8px solid var(--darkBrown);
 }
 section.home-hero h2 {
     color: var(--darkBrown);
@@ -162,6 +175,20 @@ section.home-hero h2 {
 }
 section.home-hero a.button {
     box-shadow: 1px 1px 8px 2px rgba(26, 17, 15, .8);
+}
+/*===== SUB HERO =====*/
+section.sub-hero {
+    background: url(../images/sub-hero.jpg) center center/cover no-repeat;
+    padding: 2em;
+    text-align: center;
+    border-top: 4px solid var(--darkBrown);
+    border-bottom: 8px solid var(--darkBrown);
+}
+section.sub-hero h2 {
+    color: var(--darkBrown);
+    
+    letter-spacing: .08em;
+    line-height: 1.5em;
 }
 /*===== CURRENT CONDITIONS ROW =====*/
 section.current-conditions {
@@ -178,10 +205,6 @@ section.current-conditions h3 {
     padding-bottom: .25em;
     border-bottom: 1px solid var(--darkBrown);
 }
-/* section.current-conditions img {
-    margin: -1em;
-    background-color: var(--white);
-} */
 section.current-conditions dl {
     margin: .5em 0 0 0;
     display: flex;
@@ -201,13 +224,13 @@ section.current-conditions dd {
     margin: 0;
 }
 /*===== HOME BODY CONTENT =====*/
-main {
-    padding: 1em;
-}
 main h2 {
     text-align: center;
     padding-bottom: .25em;
     border-bottom: 1px solid var(--mainBlue);
+}
+main > section {
+    padding: 1em;
 }
 /*===== RENTAL SUMMARY =====*/
 section.rentals h2 {
@@ -226,7 +249,64 @@ section.rentals a.button {
     text-align: center;
     margin-bottom: 2em;
 }
+section.rentals img.rental-img {
+    display: none;
+}
 /*===== CONTACT HOME =====*/
 .contact-info h4 {
     margin-bottom: -.5em;
+}
+img.scooter-med {
+    display: none;
+}
+/*===== THREE DAY FORCAST =====*/
+section.forcast {
+    padding-bottom: 2em;
+    background-color: var(--altBkgColor);
+}
+.forcast ul {
+    width: 50%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+}
+.forcast ul li {
+    border: 1px solid var(--mainBlue);
+    text-align: center;
+    padding-bottom: .4em;
+    font-weight: 600;
+    background-color: var(--white);
+}
+.forcast ul li strong {
+    display: block;
+    background-color: var(--mainBlue);
+    padding: .3em 1.5em;
+    white-space: nowrap;
+    color: var(--white);
+}
+.forcast ul li img {
+    display: block;
+    margin: 0 auto;
+}
+/*===== FOOTER =====*/
+footer {
+    background-color: var(--darkBrown);
+    color: var(--white);
+    padding: 1em;
+    text-align: center;
+}
+ul.social {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.social li img {
+    width: 75%;
 }
